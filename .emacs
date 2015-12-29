@@ -5,7 +5,6 @@
 (add-hook 'emacs-startup-hook
 	  (lambda ()  
 
-
 	    
 	    (require 'gruvbox-theme)
 	    (set-face-attribute 'default nil :font "Consolas 12")
@@ -24,7 +23,6 @@
 	    (autopair-global-mode)
 
 
-
 	    (require 'auto-complete)
 	    (ac-config-default)  
 	    (require 'auto-complete-config)
@@ -32,11 +30,9 @@
 	    (require 'auto-complete-c-headers)
 	    (add-to-list 'ac-sources 'ac-source-c-headers)
 
-
 	    
 	    (require 'yasnippet)
 	    (yas-global-mode 1)
-	    
 
 	    
 	    (scroll-bar-mode -1)
@@ -53,8 +49,6 @@
 	      (interactive)
 	      (list-packages))
 
-
-	    (setq backup-directory-alist `(("." . "~/.saves")));should put backups into a directory called 'saves'
 
 	    (global-aggressive-indent-mode 1)
 					; shows the parne mode, highlighting the parens of a pair. 
@@ -114,14 +108,19 @@
 	    (ad-activate 'linum-on)
 	    (global-linum-mode)
 
+	    (add-hook 'prog-mode-hook 'rainbow-identifiers-mode)
 
-
-	    
 	    (require 'sr-speedbar)
 	    (sr-speedbar-open)
 	    (sr-speedbar-refresh-turn-on)
-	    
-	    
+	    (with-current-buffer sr-speedbar-buffer-name
+	      (setq window-size-fixed 'width))
+	    (custom-set-variables
+	     '(speedbar-show-unknown-files 1)
+	     )
+	    (setq speedbar-use-images nil)
+
+
 	    ;; Removes *messages* from the buffer.
 	    (setq-default message-log-max nil)
 	    (kill-buffer "*Messages*")
@@ -133,20 +132,27 @@
 			   (and (get-buffer buffer)
 				(kill-buffer buffer)))))
 
-
-
 	    ;; No more typing the whole yes or no. Just y or n will do.
 	    (fset 'yes-or-no-p 'y-or-n-p)
 
-	    (cd "C:/users/null/workspace/")
+	    (fic-mode);TODO FIXME is this highlited? If not this is not working
 
+	    ;; Put autosave files (ie #foo#) and backup files (ie foo~) in ~/.emacs.d/.
+	    (custom-set-variables
+	     '(auto-save-file-name-transforms '((".*" "~/.emacs.d/autosaves/\\1" t)))
+	     '(backup-directory-alist '((".*" . "~/.emacs.d/backups/"))))
+
+	    ;; create the autosave dir if necessary, since emacs won't.
+	    (make-directory "~/.emacs.d/autosaves/" t)
+
+
+	    (cd "C:/users/null/workspace/")
 
 	    (kill-buffer "*scratch*")
 	    (kill-buffer "*GNU Emacs*");If you don't see "No buffer named GNU emacs in the minibuffer the entire init file did not load"
 
 	    
 	    )); end of startup hook
-
 
 (custom-set-variables
  ;; custom-set-variables was added by Custom.
@@ -164,7 +170,9 @@
  '(desktop-save-mode t)
  '(menu-bar-mode nil)
  '(package-archives (quote (("gnu" . "http://elpa.gnu.org/packages/"))))
- '(sr-speedbar-default-width 40)
+ '(rainbow-identifiers-face-count 6)
+ '(speedbar-show-unknown-files 1)
+ '(sr-speedbar-default-width 30)
  '(sr-speedbar-right-side nil)
  '(tool-bar-mode nil))
 (custom-set-faces
