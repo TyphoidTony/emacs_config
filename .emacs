@@ -5,13 +5,7 @@
 (add-hook 'emacs-startup-hook
 	  (lambda ()  
 
-	    
-	    (require 'gruvbox-theme)
-	    (set-face-attribute 'default nil :font "Consolas 12")
-	    (require 'powerline)
-	    (powerline-default-theme)
 
-	    
 	    (when (>= emacs-major-version 24)
 	      (require 'package)
 	      (package-initialize)
@@ -19,28 +13,6 @@
 	      )
 
 
-	    (require 'autopair) 
-	    (autopair-global-mode)
-
-
-	    (require 'auto-complete)
-	    (ac-config-default)  
-	    (require 'auto-complete-config)
-	    (auto-complete-mode)
-	    (require 'auto-complete-c-headers)
-	    (add-to-list 'ac-sources 'ac-source-c-headers)
-
-	    
-	    (require 'yasnippet)
-	    (yas-global-mode 1)
-
-	    
-	    (scroll-bar-mode -1)
-	    (add-hook 'after-make-frame-functions
-		      '(lambda (frame)
-			 (modify-frame-parameters frame
-						  '((vertical-scroll-bars . nil)
-						    (horizontal-scroll-bars . nil)))))
 	    (defun kcb()
 	      (interactive)
 	      (kill-buffer))
@@ -49,16 +21,15 @@
 	      (interactive)
 	      (list-packages))
 
+	    
+	    (scroll-bar-mode -1)
+	    (add-hook 'after-make-frame-functions
+		      '(lambda (frame)
+			 (modify-frame-parameters frame
+						  '((vertical-scroll-bars . nil)
 
-	    (global-aggressive-indent-mode 1)
-					; shows the parne mode, highlighting the parens of a pair. 
-	    (show-paren-mode 1)
-					; turns off system sound
-	    (setq visible-bell t)
-					; sets highlight linemode on
-	    (global-hl-line-mode)
 
-		
+	    
 					; this makes it so that ctrl + arrows resize the current buffer window
 	    (global-set-key (kbd "<C-up>") 'shrink-window)
 	    (global-set-key (kbd "<C-down>") 'enlarge-window)
@@ -76,6 +47,40 @@
 					; switches between previous and next buffer
 	    (global-set-key (kbd "C-x C-l") 'next-buffer)
 	    (global-set-key (kbd "C-x C-j") 'previous-buffer)
+
+
+					; turns off system sound
+	    (setq visible-bell t)
+
+	    
+	    (require 'gruvbox-theme)
+	    (set-face-attribute 'default nil :font "Consolas 12")
+	    (require 'powerline)
+	    (powerline-default-theme)
+
+
+	    (require 'autopair) 
+	    (autopair-global-mode)
+
+
+	    (require 'auto-complete)
+	    (ac-config-default)  
+	    (require 'auto-complete-config)
+	    (auto-complete-mode)
+	    (require 'auto-complete-c-headers)
+	    (add-to-list 'ac-sources 'ac-source-c-headers)
+
+	    
+	    (require 'yasnippet)
+	    (yas-global-mode 1)
+
+
+
+	    (global-aggressive-indent-mode 1)
+					; shows the parne mode, highlighting the parens of a pair. 
+	    (show-paren-mode 1)
+					; sets highlight linemode on
+	    (global-hl-line-mode)
 
 
 					; disables linum-mode in specific buffers
@@ -97,7 +102,7 @@
 	    (ad-activate 'linum-on)
 	    (global-linum-mode)
 
-	    ;for all those nice variable colors
+					;for all those nice variable colors
 	    (add-hook 'prog-mode-hook 'rainbow-identifiers-mode)
 
 	    (require 'sr-speedbar)
