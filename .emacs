@@ -58,25 +58,14 @@
 					; sets highlight linemode on
 	    (global-hl-line-mode)
 
-
-	    (defun my-previous-window()
-	      "Previous window"
-	      (interactive)
-	      (other-window -1))           
-	    (global-set-key  (kbd "C-x C-,") 'my-previous-window) 
-	    (global-set-key (kbd  "C-x C-.") 'other-window)
-
-					; switches between previous and next buffer
-	    (global-set-key (kbd "C-x C-l") 'next-buffer)
-	    (global-set-key (kbd "C-x C-j") 'previous-buffer)
-
+		
 					; this makes it so that ctrl + arrows resize the current buffer window
 	    (global-set-key (kbd "<C-up>") 'shrink-window)
 	    (global-set-key (kbd "<C-down>") 'enlarge-window)
 	    (global-set-key (kbd "<C-left>") 'shrink-window-horizontally)
 	    (global-set-key (kbd "<C-right>") 'enlarge-window-horizontally)
 
-
+					; moves left and right between windows
 	    (defun my-previous-window()
 	      "Previous window"
 	      (interactive)
@@ -108,6 +97,7 @@
 	    (ad-activate 'linum-on)
 	    (global-linum-mode)
 
+	    ;for all those nice variable colors
 	    (add-hook 'prog-mode-hook 'rainbow-identifiers-mode)
 
 	    (require 'sr-speedbar)
@@ -132,10 +122,33 @@
 			   (and (get-buffer buffer)
 				(kill-buffer buffer)))))
 
+
+	    (defadvice pop-to-buffer (before cancel-other-window first)
+	      (ad-set-arg 1 nil))
+
+	    (ad-activate 'pop-to-buffer)
+
+	    ;; Toggle window dedication
+	    (defun toggle-window-dedicated ()
+	      "Toggle whether the current active window is dedicated or not"
+	      (interactive)
+	      (message
+	       (if (let (window (get-buffer-window (current-buffer)))
+		     (set-window-dedicated-p window 
+					     (not (window-dedicated-p window))))
+		   "Window '%s' is dedicated"
+		 "Window '%s' is normal")
+	       (current-buffer)))
+
+	    ;; Press [pause] key in each window you want to "freeze"
+	    (global-set-key [pause] 'toggle-window-dedicated)
+
+
+
 	    ;; No more typing the whole yes or no. Just y or n will do.
 	    (fset 'yes-or-no-p 'y-or-n-p)
 
-	    (fic-mode);TODO FIXME is this highlited? If not this is not working
+	    (fic-mode t);TODO FIXME is this highlited? If not this is not working 
 
 	    ;; Put autosave files (ie #foo#) and backup files (ie foo~) in ~/.emacs.d/.
 	    (custom-set-variables
@@ -159,6 +172,8 @@
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
+ '(auto-save-file-name-transforms (quote ((".*" "~/.emacs.d/autosaves/\\1" t))))
+ '(backup-directory-alist (quote ((".*" . "~/.emacs.d/backups/"))))
  '(column-number-mode t)
  '(custom-enabled-themes (quote (gruvbox)))
  '(custom-safe-themes
@@ -170,6 +185,7 @@
  '(desktop-save-mode t)
  '(menu-bar-mode nil)
  '(package-archives (quote (("gnu" . "http://elpa.gnu.org/packages/"))))
+ '(pop-up-windows nil)
  '(rainbow-identifiers-face-count 6)
  '(speedbar-show-unknown-files 1)
  '(sr-speedbar-default-width 30)
