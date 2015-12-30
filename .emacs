@@ -22,12 +22,12 @@
 	      (list-packages))
 
 	    
-	    (scroll-bar-mode -1)
+  (scroll-bar-mode -1)
 	    (add-hook 'after-make-frame-functions
 		      '(lambda (frame)
 			 (modify-frame-parameters frame
 						  '((vertical-scroll-bars . nil)
-
+						    (horizontal-scroll-bars . nil)))))
 
 	    
 					; this makes it so that ctrl + arrows resize the current buffer window
