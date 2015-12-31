@@ -134,6 +134,7 @@
 	    (add-to-list 'ac-sources 'ac-source-c-headers)
 
 	    (global-set-key (kbd  "C-x C-;") 'iedit-mode)
+	    
 
 	    ;;turns on icicles mode minibuffer completion
 	    ;;You can cycle through completion by using Home and End 
@@ -181,6 +182,7 @@
  '(desktop-restore-reuses-frames t)
  '(desktop-save t)
  '(desktop-save-mode t)
+ '(icicle-region-background "dark slate gray")
  '(menu-bar-mode nil)
  '(package-archives (quote (("gnu" . "http://elpa.gnu.org/packages/"))))
  '(pop-up-windows nil)
