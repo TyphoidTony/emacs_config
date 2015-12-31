@@ -32,6 +32,7 @@ Parentheses around commands are just used to denote individual sets of commands
 - dash (is a dependancy a package if I rememeber)
 - fic-mode
 - gruvbox-theme
+- icicles
 - iedit
 - paredit
 - popup
@@ -39,4 +40,3 @@ Parentheses around commands are just used to denote individual sets of commands
 - rainbow-identifiers
 - sr-speedbar
 - yasnippet
-- icicles
