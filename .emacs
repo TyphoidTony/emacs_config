@@ -12,7 +12,6 @@
 	      (add-to-list 'package-archives '("melpa" . "http://melpa.milkbox.net/packages/") t)
 	      )
 
-
 	    (defun kcb()
 	      (interactive)
 	      (kill-buffer))
@@ -21,22 +20,21 @@
 	      (interactive)
 	      (list-packages))
 
-	    
-  (scroll-bar-mode -1)
+	    ;;disables verital anc horizontal scrollbars
+	    (scroll-bar-mode -1)
 	    (add-hook 'after-make-frame-functions
 		      '(lambda (frame)
 			 (modify-frame-parameters frame
 						  '((vertical-scroll-bars . nil)
 						    (horizontal-scroll-bars . nil)))))
-
 	    
-					; this makes it so that ctrl + arrows resize the current buffer window
+	    ;; this makes it so that ctrl + arrows resize the current buffer window
 	    (global-set-key (kbd "<C-up>") 'shrink-window)
 	    (global-set-key (kbd "<C-down>") 'enlarge-window)
 	    (global-set-key (kbd "<C-left>") 'shrink-window-horizontally)
 	    (global-set-key (kbd "<C-right>") 'enlarge-window-horizontally)
 
-					; moves left and right between windows
+	    ;; moves left and right between windows
 	    (defun my-previous-window()
 	      "Previous window"
 	      (interactive)
@@ -44,43 +42,25 @@
 	    (global-set-key  (kbd "C-x C-,") 'my-previous-window) 
 	    (global-set-key (kbd  "C-x C-.") 'other-window)
 
-					; switches between previous and next buffer
+	    ;; switches between previous and next buffer
 	    (global-set-key (kbd "C-x C-l") 'next-buffer)
 	    (global-set-key (kbd "C-x C-j") 'previous-buffer)
 
 
-					; turns off system sound
-	    (setq visible-bell t)
+	    ;; Toggle window dedication
+	    (defun toggle-window-dedicated ()
+	      "Toggle whether the current active window is dedicated or not"
+	      (interactive)
+	      (message
+	       (if (let (window (get-buffer-window (current-buffer)))
+		     (set-window-dedicated-p window 
+					     (not (window-dedicated-p window))))
+		   "Window '%s' is dedicated"
+		 "Window '%s' is normal")
+	       (current-buffer)))
 
-	    
-	    (require 'gruvbox-theme)
-	    (set-face-attribute 'default nil :font "Consolas 12")
-	    (require 'powerline)
-	    (powerline-default-theme)
-
-
-	    (require 'autopair) 
-	    (autopair-global-mode)
-
-
-	    (require 'auto-complete)
-	    (ac-config-default)  
-	    (require 'auto-complete-config)
-	    (auto-complete-mode)
-	    (require 'auto-complete-c-headers)
-	    (add-to-list 'ac-sources 'ac-source-c-headers)
-
-	    
-	    (require 'yasnippet)
-	    (yas-global-mode 1)
-
-
-
-	    (global-aggressive-indent-mode 1)
-					; shows the parne mode, highlighting the parens of a pair. 
-	    (show-paren-mode 1)
-					; sets highlight linemode on
-	    (global-hl-line-mode)
+	    ;; Press [pause] key in each window you want to "freeze"
+	    (global-set-key [pause] 'toggle-window-dedicated)
 
 
 					; disables linum-mode in specific buffers
@@ -99,23 +79,6 @@
 	      (unless (member major-mode linum-mode-inhibit-modes-list)
 		ad-do-it))
 
-	    (ad-activate 'linum-on)
-	    (global-linum-mode)
-
-					;for all those nice variable colors
-	    (add-hook 'prog-mode-hook 'rainbow-identifiers-mode)
-
-	    (require 'sr-speedbar)
-	    (sr-speedbar-open)
-	    (sr-speedbar-refresh-turn-on)
-	    (with-current-buffer sr-speedbar-buffer-name
-	      (setq window-size-fixed 'width))
-	    (custom-set-variables
-	     '(speedbar-show-unknown-files 1)
-	     )
-	    (setq speedbar-use-images nil)
-
-
 	    ;; Removes *messages* from the buffer.
 	    (setq-default message-log-max nil)
 	    (kill-buffer "*Messages*")
@@ -133,52 +96,82 @@
 
 	    (ad-activate 'pop-to-buffer)
 
-	    ;; Toggle window dedication
-	    (defun toggle-window-dedicated ()
-	      "Toggle whether the current active window is dedicated or not"
-	      (interactive)
-	      (message
-	       (if (let (window (get-buffer-window (current-buffer)))
-		     (set-window-dedicated-p window 
-					     (not (window-dedicated-p window))))
-		   "Window '%s' is dedicated"
-		 "Window '%s' is normal")
-	       (current-buffer)))
 
-	    ;; Press [pause] key in each window you want to "freeze"
-	    (global-set-key [pause] 'toggle-window-dedicated)
+	    (ad-activate 'linum-on)
+	    (global-linum-mode)
 
-
+	    ;; sets highlight linemode on
+	    (global-hl-line-mode)
 
 	    ;; No more typing the whole yes or no. Just y or n will do.
 	    (fset 'yes-or-no-p 'y-or-n-p)
 
-	    (fic-mode t);TODO FIXME is this highlited? If not this is not working 
+	    ;; turns off system sound
+	    (setq visible-bell t)
 
-	    ;; Put autosave files (ie #foo#) and backup files (ie foo~) in ~/.emacs.d/.
+	    ;;sets font to Consolas
+	    (set-face-attribute 'default nil :font "Consolas 12")
+
+	    ;;enables paren mode
+	    (show-paren-mode t)
+
+	    
+	    ;; ##### Start of config file where packages are required
+	    
+	    (require 'gruvbox-theme)
+
+	    (require 'powerline)
+	    (powerline-default-theme)
+
+	    (require 'autopair) 
+	    (autopair-global-mode)
+
+	    (require 'auto-complete)
+	    (ac-config-default)  
+	    (require 'auto-complete-config)
+	    (auto-complete-mode)
+	    (require 'auto-complete-c-headers)
+	    (add-to-list 'ac-sources 'ac-source-c-headers)
+
+	    (global-set-key (kbd  "C-x C-;") 'iedit-mode)
+
+	    ;;turns on icicles mode minibuffer completion
+	    ;;You can cycle through completion by using Home and End 
+	    (icy-mode 1)
+	    
+	    (require 'yasnippet)
+	    (yas-global-mode 1)
+
+	    (global-aggressive-indent-mode 1)
+
+	    ;;for all those nice variable colors
+	    (add-hook 'prog-mode-hook 'rainbow-identifiers-mode)
+
+	    (require 'sr-speedbar)
+	    (sr-speedbar-open)
+	    (sr-speedbar-refresh-turn-on)
+	    (with-current-buffer sr-speedbar-buffer-name
+	      (setq window-size-fixed 'width))
 	    (custom-set-variables
-	     '(auto-save-file-name-transforms '((".*" "~/.emacs.d/autosaves/\\1" t)))
-	     '(backup-directory-alist '((".*" . "~/.emacs.d/backups/"))))
+	     '(speedbar-show-unknown-files 1)
+	     )
+	    (setq speedbar-use-images nil)
 
-	    ;; create the autosave dir if necessary, since emacs won't.
-	    (make-directory "~/.emacs.d/autosaves/" t)
-
+	    (fic-mode t);TODO FIXME is this highlited? If not this is not working 
 
 	    (cd "C:/users/null/workspace/")
 
 	    (kill-buffer "*scratch*")
 	    (kill-buffer "*GNU Emacs*");If you don't see "No buffer named GNU emacs in the minibuffer the entire init file did not load"
 
-	    
 	    )); end of startup hook
-
 (custom-set-variables
  ;; custom-set-variables was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
- '(auto-save-file-name-transforms (quote ((".*" "~/.emacs.d/autosaves/\\1" t))))
- '(backup-directory-alist (quote ((".*" . "~/.emacs.d/backups/"))))
+ '(auto-save-file-name-transforms (quote ((".*" "c:/Temp" t))))
+ '(backup-directory-alist (quote ((".*" . "c:/Temp"))))
  '(column-number-mode t)
  '(custom-enabled-themes (quote (gruvbox)))
  '(custom-safe-themes

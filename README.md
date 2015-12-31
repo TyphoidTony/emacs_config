@@ -10,7 +10,7 @@ Parentheses around commands are just used to denote individual sets of commands
 - kcb : Kills current buffer
 
 - lsp : lists packages
-  
+
 - toggle-window-dedicated :   Taken from a stack overflow question about how to lock buffers 
 
 - pause : hotkey for toggle-window-dedicated command
@@ -20,6 +20,8 @@ Parentheses around commands are just used to denote individual sets of commands
 - (C-up) (C-down) (C-left) (C-right) : shrinks, enlarges as well as shrinks and enlarges horizontally respectively
 
 - (C-x C-,) (C-x C-.) : previous and next window respectively
+
+- (C-x C-;) : turns iedit mode on when you're over a possible candidate
 
 #List of used packages
 
@@ -35,6 +37,6 @@ Parentheses around commands are just used to denote individual sets of commands
 - popup
 - powerline
 - rainbow-identifiers
-- s
 - sr-speedbar
 - yasnippet
+- icicles
