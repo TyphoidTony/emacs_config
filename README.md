@@ -29,7 +29,6 @@ Parentheses around commands are just used to denote individual sets of commands
 - auto-complete
 - auto-complete-c-headers
 - auto-pair
-- dash (is a dependancy a package if I rememeber)
 - fic-mode
 - gruvbox-theme
 - icicles
