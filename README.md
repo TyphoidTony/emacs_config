@@ -13,7 +13,7 @@ Parentheses around commands are just used to denote individual sets of commands
 
 - toggle-window-dedicated :   Taken from a stack overflow question about how to lock buffers 
 
-- pause : hotkey for toggle-window-dedicated command
+- apps [aka mouse right click key] : hotkey for toggle-window-dedicated command
 
 - (C-x C-l) (C-x C-J) : switches to next and previous buffer respectively 
 

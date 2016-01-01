@@ -46,7 +46,7 @@
 	    (global-set-key (kbd "C-x C-l") 'next-buffer)
 	    (global-set-key (kbd "C-x C-j") 'previous-buffer)
 
-
+	    
 	    ;; Toggle window dedication
 	    (defun toggle-window-dedicated ()
 	      "Toggle whether the current active window is dedicated or not"
@@ -59,8 +59,8 @@
 		 "Window '%s' is normal")
 	       (current-buffer)))
 
-	    ;; Press [pause] key in each window you want to "freeze"
-	    (global-set-key [pause] 'toggle-window-dedicated)
+	    ;; Press [apps] key in each window you want to "freeze"
+	    (global-set-key [apps] 'toggle-window-dedicated)
 
 
 					; disables linum-mode in specific buffers
