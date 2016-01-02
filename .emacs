@@ -59,8 +59,8 @@
 		 "Window '%s' is normal")
 	       (current-buffer)))
 
-	    ;; Press [pause] key in each window you want to "freeze"
-	    (global-set-key [pause] 'toggle-window-dedicated)
+	    ;; Press [apps] key in each window you want to "freeze" apps key is the right click key
+	    (global-set-key [apps] 'toggle-window-dedicated)
 
 
 					; disables linum-mode in specific buffers
@@ -72,7 +72,9 @@
 						  gnus-group-mode
 						  gnus-summary-mode
 						  gnus-article-mode
-						  speedbar-mode))
+						  speedbar-mode
+						  dired-mode
+						  dired-toggle))
 	    
 	    (defadvice linum-on (around linum-on-inhibit-for-modes)
 	      "Stop the load of linum-mode for some major modes."
@@ -116,7 +118,8 @@
 	    (show-paren-mode t)
 
 	    
-	    ;; ##### Start of config file where packages are required
+	    
+	    ;; ##### Start of config file where packages are required #############################
 	    
 	    (require 'gruvbox-theme)
 
@@ -134,7 +137,8 @@
 	    (add-to-list 'ac-sources 'ac-source-c-headers)
 
 	    (global-set-key (kbd  "C-x C-;") 'iedit-mode)
-	    
+
+
 
 	    ;;turns on icicles mode minibuffer completion
 	    ;;You can cycle through completion by using Home and End 
@@ -150,16 +154,17 @@
 
 	    (require 'sr-speedbar)
 	    (sr-speedbar-open)
-	    (sr-speedbar-refresh-turn-on)
+
 	    (with-current-buffer sr-speedbar-buffer-name
 	      (setq window-size-fixed 'width))
 	    (custom-set-variables
 	     '(speedbar-show-unknown-files 1)
 	     )
 	    (setq speedbar-use-images nil)
-
-	    (fic-mode t);TODO FIXME is this highlited? If not this is not working 
-
+	    (sr-speedbar-refresh-turn-on)
+	    
+	    (fic-mode t)
+	    
 	    (cd "C:/users/null/workspace/")
 
 	    (kill-buffer "*scratch*")
@@ -184,11 +189,16 @@
  '(desktop-save-mode t)
  '(icicle-region-background "dark slate gray")
  '(menu-bar-mode nil)
+ '(neo-smart-open t)
+ '(neo-window-position (quote right))
  '(package-archives (quote (("gnu" . "http://elpa.gnu.org/packages/"))))
  '(pop-up-windows nil)
  '(rainbow-identifiers-face-count 6)
  '(speedbar-show-unknown-files 1)
- '(sr-speedbar-default-width 30)
+ '(speedbar-update-flag t)
+ '(speedbar-use-images nil)
+ '(speedbar-verbosity-level 0)
+ '(sr-speedbar-default-width 40)
  '(sr-speedbar-right-side nil)
  '(tool-bar-mode nil))
 (custom-set-faces
