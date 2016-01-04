@@ -23,6 +23,7 @@ Parentheses around commands are just used to denote individual sets of commands
 
 - (C-x C-;) : turns iedit mode on when you're over a possible candidate
 
+- (C-=) : starts shell command prompt in the minibuffer 
 
 #List of used packages
 
@@ -34,6 +35,7 @@ Parentheses around commands are just used to denote individual sets of commands
 - gruvbox-theme
 - icicles
 - iedit
+- neotree
 - paredit
 - popup
 - powerline

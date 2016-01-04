@@ -72,9 +72,7 @@
 						  gnus-group-mode
 						  gnus-summary-mode
 						  gnus-article-mode
-						  speedbar-mode
-						  dired-mode
-						  dired-toggle))
+						  speedbar-mode )) 
 	    
 	    (defadvice linum-on (around linum-on-inhibit-for-modes)
 	      "Stop the load of linum-mode for some major modes."
@@ -116,8 +114,8 @@
 
 	    ;;enables paren mode
 	    (show-paren-mode t)
-
 	    
+	    (global-set-key (kbd "C-=") 'shell-command)
 	    
 	    ;; ##### Start of config file where packages are required #############################
 	    
@@ -129,16 +127,18 @@
 	    (require 'autopair) 
 	    (autopair-global-mode)
 
+	    ;;auto-complete code block
 	    (require 'auto-complete)
 	    (ac-config-default)  
 	    (require 'auto-complete-config)
+	    (defun my:ac-c-headers-init ()
+	      (require 'auto-complete-c-headers)
+	      (add-to-list 'ac-sources 'ac-source-c-headers))
+	    (add-hook 'c++-mode-hook 'my:ac-c-headers-init)
+	    (add-hook 'c-mode-hook 'my:ac-c-headers-init)
 	    (auto-complete-mode)
-	    (require 'auto-complete-c-headers)
-	    (add-to-list 'ac-sources 'ac-source-c-headers)
 
 	    (global-set-key (kbd  "C-x C-;") 'iedit-mode)
-
-
 
 	    ;;turns on icicles mode minibuffer completion
 	    ;;You can cycle through completion by using Home and End 
@@ -152,9 +152,9 @@
 	    ;;for all those nice variable colors
 	    (add-hook 'prog-mode-hook 'rainbow-identifiers-mode)
 
+	    ;;sr-speedbar code block
 	    (require 'sr-speedbar)
 	    (sr-speedbar-open)
-
 	    (with-current-buffer sr-speedbar-buffer-name
 	      (setq window-size-fixed 'width))
 	    (custom-set-variables
@@ -162,7 +162,10 @@
 	     )
 	    (setq speedbar-use-images nil)
 	    (sr-speedbar-refresh-turn-on)
-	    
+
+	    (require 'neotree)
+	    (neotree-toggle)
+	    (neotree-dir "~/Workspace")
 	    (fic-mode t)
 	    
 	    (cd "C:/users/null/workspace/")
@@ -189,8 +192,10 @@
  '(desktop-save-mode t)
  '(icicle-region-background "dark slate gray")
  '(menu-bar-mode nil)
+ '(neo-click-changes-root t)
  '(neo-smart-open t)
  '(neo-window-position (quote right))
+ '(neo-window-width 30)
  '(package-archives (quote (("gnu" . "http://elpa.gnu.org/packages/"))))
  '(pop-up-windows nil)
  '(rainbow-identifiers-face-count 6)
