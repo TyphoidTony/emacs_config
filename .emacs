@@ -163,9 +163,7 @@
 	    (setq speedbar-use-images nil)
 	    (sr-speedbar-refresh-turn-on)
 
-	    (require 'neotree)
-	    (neotree-toggle)
-	    (neotree-dir "~/Workspace")
+	    (require 'fic-mode)
 	    (fic-mode t)
 	    
 	    (cd "C:/users/null/workspace/")

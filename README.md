@@ -35,7 +35,6 @@ Parentheses around commands are just used to denote individual sets of commands
 - gruvbox-theme
 - icicles
 - iedit
-- neotree
 - paredit
 - popup
 - powerline
