@@ -15,15 +15,16 @@ Parentheses around commands are just used to denote individual sets of commands
 
 - apps [aka mouse right click key] : hotkey for toggle-window-dedicated command
 
-- (C-x C-l) (C-x C-J) : switches to next and previous buffer respectively 
+- (C-l) (C-J) : switches to next and previous buffer respectively 
 
 - (C-up) (C-down) (C-left) (C-right) : shrinks, enlarges as well as shrinks and enlarges horizontally respectively
 
-- (C-x C-,) (C-x C-.) : previous and next window respectively
+- ( C-,) (C-.) : previous and next window respectively
 
 - (C-x C-;) : turns iedit mode on when you're over a possible candidate
 
 - (C-=) : starts shell command prompt in the minibuffer 
+
 
 #List of used packages
 
