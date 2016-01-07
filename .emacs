@@ -5,7 +5,6 @@
 (add-hook 'emacs-startup-hook
 	  (lambda ()  
 
-
 	    (when (>= emacs-major-version 24)
 	      (require 'package)
 	      (package-initialize)
@@ -39,12 +38,12 @@
 	      "Previous window"
 	      (interactive)
 	      (other-window -1))           
-	    (global-set-key  (kbd "C-x C-,") 'my-previous-window) 
-	    (global-set-key (kbd  "C-x C-.") 'other-window)
+	    (global-set-key  (kbd "C-,") 'my-previous-window) 
+	    (global-set-key (kbd  "C-.") 'other-window)
 
 	    ;; switches between previous and next buffer
-	    (global-set-key (kbd "C-x C-l") 'next-buffer)
-	    (global-set-key (kbd "C-x C-j") 'previous-buffer)
+	    (global-set-key (kbd "  C-l") 'next-buffer)
+	    (global-set-key (kbd " C-j") 'previous-buffer)
 
 
 	    ;; Toggle window dedication
@@ -116,7 +115,10 @@
 	    (show-paren-mode t)
 	    
 	    (global-set-key (kbd "C-=") 'shell-command)
+
+	    (require 'flymake)
 	    
+
 	    ;; ##### Start of config file where packages are required #############################
 	    
 	    (require 'gruvbox-theme)
@@ -126,6 +128,8 @@
 
 	    (require 'autopair) 
 	    (autopair-global-mode)
+
+	    (require 'rfringe)
 
 	    ;;auto-complete code block
 	    (require 'auto-complete)
@@ -162,11 +166,23 @@
 	     )
 	    (setq speedbar-use-images nil)
 	    (sr-speedbar-refresh-turn-on)
-
+	    
 	    (require 'fic-mode)
 	    (fic-mode t)
 	    
 	    (cd "C:/users/null/workspace/")
+
+	    (setq path-to-ctags "C:\ctags")
+	    (defun create-tags (dir-name)
+	      "Create tags file."
+	      (interactive "DDirectory: ")
+	      (shell-command
+	       (format "ctags -f %s -e -R %s" path-to-ctags (directory-file-name dir-name)))
+	      )
+
+	    (projectile-global-mode)
+	    (setq projectile-indexing-method 'alien)
+	    (setq projectile-enable-caching t)
 
 	    (kill-buffer "*scratch*")
 	    (kill-buffer "*GNU Emacs*");If you don't see "No buffer named GNU emacs in the minibuffer the entire init file did not load"
