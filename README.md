@@ -38,6 +38,7 @@ Parentheses around commands are just used to denote individual sets of commands
 - iedit
 - paredit
 - popup
+- projectile
 - powerline
 - rainbow-identifiers
 - sr-speedbar
