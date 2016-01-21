@@ -183,7 +183,7 @@
 	    (setq projectile-indexing-method 'alien)
 	    (setq projectile-enable-caching t)
 
-	    (kill-buffer "*scartch*")
+	    (kill-buffer "*scratch*")
 	    (kill-buffer "*GNU Emacs*");If you don't see "No buffer named GNU emacs in the minibuffer the entire init file did not load"
 
 	    )); end of startup hook
