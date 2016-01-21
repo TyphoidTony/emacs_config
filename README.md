@@ -35,6 +35,7 @@ Parentheses around commands are just used to denote individual sets of commands
 - fic-mode
 - gruvbox-theme
 - icicles
+- ido
 - iedit
 - paredit
 - popup
