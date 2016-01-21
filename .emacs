@@ -89,7 +89,6 @@
 			   (and (get-buffer buffer)
 				(kill-buffer buffer)))))
 
-
 	    (defadvice pop-to-buffer (before cancel-other-window first)
 	      (ad-set-arg 1 nil))
 
@@ -115,10 +114,10 @@
 	    (show-paren-mode t)
 	    
 	    (global-set-key (kbd "C-=") 'shell-command)
-
-	    (require 'flymake)
 	    
-
+	    (setq ido-enable-flex-matching t)
+	    (setq ido-everywhere t)
+	    (ido-mode t)
 	    ;; ##### Start of config file where packages are required #############################
 	    
 	    (require 'gruvbox-theme)
@@ -184,7 +183,7 @@
 	    (setq projectile-indexing-method 'alien)
 	    (setq projectile-enable-caching t)
 
-	    (kill-buffer "*scratch*")
+	    (kill-buffer "*scartch*")
 	    (kill-buffer "*GNU Emacs*");If you don't see "No buffer named GNU emacs in the minibuffer the entire init file did not load"
 
 	    )); end of startup hook
@@ -204,7 +203,13 @@
  '(desktop-restore-reuses-frames t)
  '(desktop-save t)
  '(desktop-save-mode t)
+ '(fic-highlighted-words (quote ("FIXME" "TODO" "BUG" "KLUDGE" "NOTE")))
  '(icicle-region-background "dark slate gray")
+ '(initial-scratch-message ";;Jot down quick notes here.
+
+
+
+")
  '(menu-bar-mode nil)
  '(neo-click-changes-root t)
  '(neo-smart-open t)
