@@ -25,6 +25,8 @@ Parentheses around commands are just used to denote individual sets of commands
 
 - (C-=) : starts shell command prompt in the minibuffer 
 
+- (f10) : prompts the make command in the minibuffer once executed it creates a small compilation window at the bottom
+  Also added some code from the emacs wiki that highlights the line that the compiler found errors on in both the compilation window and the buffer
 
 #List of used packages
 
