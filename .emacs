@@ -60,7 +60,7 @@
 
 
 
-	    (require 'custom);;start of higlight error line
+	    (require 'custom) ;;start of higlight error line
 	    
 	    (defvar all-overlays ())
 	    
