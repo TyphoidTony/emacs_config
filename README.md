@@ -44,5 +44,6 @@ Parentheses around commands are just used to denote individual sets of commands
 - projectile
 - powerline
 - rainbow-identifiers
+- rfringe
 - sr-speedbar
 - yasnippet
