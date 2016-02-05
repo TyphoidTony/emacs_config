@@ -211,70 +211,68 @@
 	    (require 'powerline)
 	    (powerline-default-theme)
 
-	    (require 'autopair) 
-	    (autopair-global-mode)
+	    (require 'god-mode)
+	    (global-set-key [f2] 'god-mode)
 
-	    (require 'rfringe)
+	  (require 'autopair) 
+	  (autopair-global-mode)
 
-	    ;;auto-complete code block
-	    (require 'auto-complete)
-	    (ac-config-default)  
-	    (require 'auto-complete-config)
-	    (defun my:ac-c-headers-init ()
-	      (require 'auto-complete-c-headers)
-	      (add-to-list 'ac-sources 'ac-source-c-headers))
-	    (add-hook 'c++-mode-hook 'my:ac-c-headers-init)
-	    (add-hook 'c-mode-hook 'my:ac-c-headers-init)
-	    (auto-complete-mode)
+	  (require 'rfringe)
 
-	    (global-set-key (kbd  "C-x C-;") 'iedit-mode)
+	  ;;auto-complete code block
+	  (require 'auto-complete)
+	  (ac-config-default)  
+	  (require 'auto-complete-config)
+	  (defun my:ac-c-headers-init ()
+	    (require 'auto-complete-c-headers)
+	    (add-to-list 'ac-sources 'ac-source-c-headers))
+	  (add-hook 'c++-mode-hook 'my:ac-c-headers-init)
+	  (add-hook 'c-mode-hook 'my:ac-c-headers-init)
+	  (auto-complete-mode)
 
-	    ;;turns on icicles mode minibuffer completion
-	    ;;You can cycle through completion by using Home and End 
-	    (icy-mode 1)
-	    
-	    (require 'yasnippet)
-	    (yas-global-mode 1)
+	  (global-set-key (kbd  "C-x C-;") 'iedit-mode)
 
-	    (global-aggressive-indent-mode 1)
+	  ;;turns on icicles mode minibuffer completion
+	  ;;You can cycle through completion by using Home and End 
+	  (icy-mode 1)
+	  
+	  (require 'yasnippet)
+	  (yas-global-mode 1)
 
-	    ;;for all those nice variable colors
-	    (add-hook 'prog-mode-hook 'rainbow-identifiers-mode)
+	  (global-aggressive-indent-mode 1)
 
-	    ;;sr-speedbar code block
-	    (require 'sr-speedbar)
-	    (sr-speedbar-open)
-	    (with-current-buffer sr-speedbar-buffer-name
-	      (setq window-size-fixed 'width))
-	    (custom-set-variables
-	     '(speedbar-show-unknown-files 1)
-	     )
-	    (setq speedbar-use-images nil)
-	    (sr-speedbar-refresh-turn-on)
-	    
-	    (require 'fic-mode)
-	    (fic-mode t)
-	    
-	    (cd "C:/users/null/workspace/")
+	  ;;for all those nice variable colors
+	  (add-hook 'prog-mode-hook 'rainbow-identifiers-mode)
 
-	    (setq path-to-ctags "C:\ctags")
-	    (defun create-tags (dir-name)
-	      "Create tags file."
-	      (interactive "DDirectory: ")
-	      (shell-command
-	       (format "ctags -f %s -e -R %s" path-to-ctags (directory-file-name dir-name)))
-	      )
+	  ;;sr-speedbar code block
+	  (require 'sr-speedbar)
+	  (sr-speedbar-open)
+	  (with-current-buffer sr-speedbar-buffer-name
+	    (setq window-size-fixed 'width))
+	  (custom-set-variables
+	   '(speedbar-show-unknown-files 1)
+	   )
+	  (setq speedbar-use-images nil)
+	  (sr-speedbar-refresh-turn-on)
+	  
+	  (require 'fic-mode)
+	  (fic-mode t)
+	  
+	  (cd "C:/users/null/workspace/")
 
-	    (projectile-global-mode)
-	    (setq projectile-indexing-method 'alien)
-	    (setq projectile-enable-caching t)
+	  (setq path-to-ctags "C:\ctags")
+	  (defun create-tags (dir-name)
+	    "Create tags file."
+	    (interactive "DDirectory: ")
+	    (shell-command
+	     (format "ctags -f %s -e -R %s" path-to-ctags (directory-file-name dir-name)))
+	    )
 
-	    
+	  (projectile-global-mode)
+	  (setq projectile-indexing-method 'alien)
+	  (setq projectile-enable-caching t)
 
-
-
-
-
+	  
 
 
 
@@ -292,10 +290,15 @@
 
 
 
-	    (kill-buffer "*scratch*")
-	    (kill-buffer "*GNU Emacs*");If you don't see "No buffer named GNU emacs in the minibuffer the entire init file did not load"
 
-	    )); end of startup hook
+
+
+
+
+	  (kill-buffer "*scratch*")
+	  (kill-buffer "*GNU Emacs*");If you don't see "No buffer named GNU emacs in the minibuffer the entire init file did not load"
+
+	  )); end of startup hook
 (custom-set-variables
  ;; custom-set-variables was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
@@ -334,9 +337,8 @@
  '(sr-speedbar-default-width 40)
  '(sr-speedbar-right-side nil)
  '(tool-bar-mode nil))
-(custom-set-faces
+
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
- )

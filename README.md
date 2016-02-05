@@ -28,6 +28,8 @@ Parentheses around commands are just used to denote individual sets of commands
 - (f10) : prompts the make command in the minibuffer once executed it creates a small compilation window at the bottom
   Also added some code from the emacs wiki that highlights the line that the compiler found errors on in both the compilation window and the buffer
 
+- (f2): enables god-mode
+
 #List of used packages
 
 - Aggressiv-indent
@@ -35,6 +37,7 @@ Parentheses around commands are just used to denote individual sets of commands
 - auto-complete-c-headers
 - auto-pair
 - fic-mode
+- god-mode
 - gruvbox-theme
 - icicles
 - ido
