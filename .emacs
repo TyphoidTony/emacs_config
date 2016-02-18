@@ -113,7 +113,7 @@
 	    (setq compilation-finish-function 'highlight-error-lines) ;; End of error line higlight
 
 	    ;; Press [apps] key in each window you want to "freeze" apps key is the right click key
-	    (global-set-key [apps] 'toggle-window-dedicated)
+	    (global-set-key [apps] 'toggle-window-dedicated);This doesn't seem to work on linux OSes so change to what you want/need it to be
 
 
 					; disables linum-mode in specific buffers
@@ -178,9 +178,6 @@
 	    (add-hook 'compilation-mode-hook 'my-compilation-hook)
 	    (global-set-key [f10] 'my-compile) ;; end of of mini compile window code
 
-
-
-
 	    (ad-activate 'linum-on)
 	    (global-linum-mode)
 
@@ -191,10 +188,12 @@
 	    (fset 'yes-or-no-p 'y-or-n-p)
 
 	    ;; turns off system sound
-	    (setq visible-bell t)
+	    (setq visible-bell nil)
 
-	    ;;sets font to Consolas
-	    (set-face-attribute 'default nil :font "Consolas 12")
+	    ;;Attempts to set font to Consolas if that font is not available it sets the default font face to Courier
+	    (unless (set-face-attribute 'default nil :font "Courier 12")
+	      (set-face-attribute 'default nil :font "Consolas 12"))
+	    
 
 	    ;;enables paren mode
 	    (show-paren-mode t)
@@ -214,98 +213,72 @@
 	    (require 'god-mode)
 	    (global-set-key [f2] 'god-mode)
 
-	  (require 'autopair) 
-	  (autopair-global-mode)
+	    (require 'autopair) 
+	    (autopair-global-mode)
 
-	  (require 'rfringe)
+	    (require 'rfringe)
 
-	  ;;auto-complete code block
-	  (require 'auto-complete)
-	  (ac-config-default)  
-	  (require 'auto-complete-config)
-	  (defun my:ac-c-headers-init ()
-	    (require 'auto-complete-c-headers)
-	    (add-to-list 'ac-sources 'ac-source-c-headers))
-	  (add-hook 'c++-mode-hook 'my:ac-c-headers-init)
-	  (add-hook 'c-mode-hook 'my:ac-c-headers-init)
-	  (auto-complete-mode)
+	    ;;auto-complete code block
+	    (require 'auto-complete)
+	    (ac-config-default)  
+	    (require 'auto-complete-config)
+	    (defun my:ac-c-headers-init ()
+	      (require 'auto-complete-c-headers)
+	      (add-to-list 'ac-sources 'ac-source-c-headers))
+	    (add-hook 'c++-mode-hook 'my:ac-c-headers-init)
+	    (add-hook 'c-mode-hook 'my:ac-c-headers-init)
+	    (auto-complete-mode)
 
-	  (global-set-key (kbd  "C-x C-;") 'iedit-mode)
+	    (global-set-key (kbd  "C-x C-;") 'iedit-mode)
 
-	  ;;turns on icicles mode minibuffer completion
-	  ;;You can cycle through completion by using Home and End 
-	  (icy-mode 1)
-	  
-	  (require 'yasnippet)
-	  (yas-global-mode 1)
+	    ;;turns on icicles mode minibuffer completion
+	    ;;You can cycle through completion by using Home and End 
+	    (icy-mode 1)
+	    
+	    (require 'yasnippet)
+	    (yas-global-mode 1)
 
-	  (global-aggressive-indent-mode 1)
+	    (global-aggressive-indent-mode 1)
 
-	  ;;for all those nice variable colors
-	  (add-hook 'prog-mode-hook 'rainbow-identifiers-mode)
+	    ;;for all those nice variable colors
+	    (add-hook 'prog-mode-hook 'rainbow-identifiers-mode)
 
-	  ;;sr-speedbar code block
-	  (require 'sr-speedbar)
-	  (sr-speedbar-open)
-	  (with-current-buffer sr-speedbar-buffer-name
-	    (setq window-size-fixed 'width))
-	  (custom-set-variables
-	   '(speedbar-show-unknown-files 1)
-	   )
-	  (setq speedbar-use-images nil)
-	  (sr-speedbar-refresh-turn-on)
-	  
-	  (require 'fic-mode)
-	  (fic-mode t)
-	  
-	  (cd "C:/users/null/workspace/")
+	    ;;sr-speedbar code block
+	    (require 'sr-speedbar)
+	    (sr-speedbar-open)
+	    (with-current-buffer sr-speedbar-buffer-name
+	      (setq window-size-fixed 'width))
+	    (custom-set-variables
+	     '(speedbar-show-unknown-files 1)
+	     )
+	    (setq speedbar-use-images nil)
+	    (sr-speedbar-refresh-turn-on)
+	    
+	    (require 'fic-mode)
+	    (fic-mode t)
+	    
 
-	  (setq path-to-ctags "C:\ctags")
-	  (defun create-tags (dir-name)
-	    "Create tags file."
-	    (interactive "DDirectory: ")
-	    (shell-command
-	     (format "ctags -f %s -e -R %s" path-to-ctags (directory-file-name dir-name)))
-	    )
+	    (projectile-global-mode)
+	    (unless (setq projectile-indexing-method 'native)
+	      (setq projectile-indexing-method 'alien))
+	    (setq projectile-enable-caching t)
 
-	  (projectile-global-mode)
-	  (setq projectile-indexing-method 'alien)
-	  (setq projectile-enable-caching t)
 
-	  
+	    (cd "C:/users/null/workspace/");put your own directory here to set as your 'startup' directory. 
+	    (kill-buffer "*scratch*")
+	    (kill-buffer "*GNU Emacs*");If you don't see "No buffer named GNU emacs in the minibuffer the entire init file did not load"
+	    )); end of startup hook
 
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-	  (kill-buffer "*scratch*")
-	  (kill-buffer "*GNU Emacs*");If you don't see "No buffer named GNU emacs in the minibuffer the entire init file did not load"
-
-	  )); end of startup hook
 (custom-set-variables
  ;; custom-set-variables was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
- '(auto-save-file-name-transforms (quote ((".*" "c:/Temp" t))))
- '(backup-directory-alist (quote ((".*" . "c:/Temp"))))
+ '(auto-save-file-name-transforms (quote ((".*" "/eTemp" t))))
+ '(backup-directory-alist (quote ((".*" . "/eTemp"))))
  '(column-number-mode t)
  '(custom-enabled-themes (quote (gruvbox)))
  '(custom-safe-themes
@@ -317,11 +290,6 @@
  '(desktop-save-mode t)
  '(fic-highlighted-words (quote ("FIXME" "TODO" "BUG" "KLUDGE" "NOTE")))
  '(icicle-region-background "dark slate gray")
- '(initial-scratch-message ";;Jot down quick notes here.
-
-
-
-")
  '(menu-bar-mode nil)
  '(neo-click-changes-root t)
  '(neo-smart-open t)
@@ -337,8 +305,7 @@
  '(sr-speedbar-default-width 40)
  '(sr-speedbar-right-side nil)
  '(tool-bar-mode nil))
-
- ;; custom-set-faces was added by Custom.
- ;; If you edit it by hand, you could mess it up, so be careful.
- ;; Your init file should contain only one such instance.
- ;; If there is more than one, they won't work right.
+;; custom-set-faces was added by Custom.
+;; If you edit it by hand, you could mess it up, so be careful.
+;; Your init file should contain only one such instance.
+;; If there is more than one, they won't work right.
