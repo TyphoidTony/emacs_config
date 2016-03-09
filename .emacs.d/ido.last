@@ -1,0 +1,67 @@
+;;; -*- coding: utf-8 -*-
+
+;; ----- ido-last-directory-list -----
+(
+ ("/home/anthony/WorkSpace/AVR Stuff/4_digit_7_segmenet_display_project/" . "src/")
+ ("/home/anthony/WorkSpace/AVR Stuff/" . "4_digit_7_segmenet_display_project/")
+ ("/home/anthony/WorkSpace/" . "AVR Stuff/")
+ ("/home/anthony/Workspace/AVR Stuff/4_digit_7_segmenet_display_project/src/$home/" . ".eTemp/")
+ ("/home/anthony/Workspace/AVR Stuff/4_digit_7_segmenet_display_project/src/" . "$home/")
+ ("/home/anthony/Workspace/AVR Stuff/4_digit_7_segmenet_display_project/" . "src/")
+ ("/home/anthony/Workspace/AVR Stuff/" . "4_digit_7_segmenet_display_project/")
+ ("/home/anthony/Workspace/" . "AVR Stuff/")
+)
+
+;; ----- ido-work-directory-list -----
+(
+ "/home/anthony/"
+ "/home/anthony/WorkSpace/AVR Stuff/4_digit_7_segmenet_display_project/src/"
+ "/home/anthony/.emacs.d/"
+ "/home/anthony/Workspace/AVR Stuff/4_digit_7_segmenet_display_project/src/"
+)
+
+;; ----- ido-work-file-list -----
+(
+ ".emacs"
+ "new_install_script.bash"
+ "display.c"
+ "text.txt"
+ "test.txt"
+ ".bashrc"
+ "package_init.el"
+ "main_init.el"
+ "emacs_init_2.el"
+ "emacs_init_1.el"
+)
+
+;; ----- ido-dir-file-cache -----
+(
+ ("/home/anthony/.emacs.d/" (22240 16638 593573 825000) "ido.last" "./" ".emacs.desktop.lock" "snippets/" "elpa/" "emacs_auto-save/" "projectile-bookmarks.eld" "emacs-backup/" "ido.last~" "ac-comphist.dat" ".emacs.desktop" "auto-save-list/" "../")
+
+ ("/home/anthony/WorkSpace/AVR Stuff/4_digit_7_segmenet_display_project/src/" (22238 62932 848352 190000) "main.c" "display.o" "./" "display.c~" "main.o" "Makefile" "README.md" "display.c" "src.hex" "display.h" "src.map" ".git/" "src.elf" "../")
+
+ ("/home/anthony/" (22240 15262 614393 998000) "Music/" ".cache/" ".emacs.d/" "Pictures/" ".fonts/" ".mozilla/" "Public/" ".config/" ".adobe/" ".bashrc" ".xsel.log" ".wine/" ".directory" ".emacs~" "./" ".emacs" ".bash_logout" ".gtkrc-2.0" ".python-eggs/" ".mono/" ".macromedia/" "Downloads/" ".kde/" ".Xauthority" ".gnupg/" ".local/" "Desktop/" ".sudo_as_admin_successful" ".profile" ".fonts.conf" ".ssh/" ".pki/" ".dbus/" "Templates/" "Documents/" "SpiderOak Hive/" ".xsession-errors" ".bash_history" ".gconf/" "Videos/" "WorkSpace/" ".recently-used" "../")
+
+ ("/home/anthony/WorkSpace/AVR Stuff/4_digit_7_segmenet_display_project/" (22231 32521 0 0) "AVR-Programming-Library/" "./" "src/" "4_digit_7_segment_display_wire_layout.txt" "4_pin_7_segement_display_layout.png" "../")
+
+ ("/home/anthony/WorkSpace/AVR Stuff/" (22231 31901 0 0) "atmel_keyboard_interfacing_avr.pdf" "AVR-Programming-Library/" "4_digit_7_segmenet_display_project/" "./" ".Trash-1000/" "TerminalEmu/" "AVR_pin_Picutres/" "../")
+
+ ("/home/anthony/WorkSpace/" (22231 31760 0 0) "AVR-Programming-master/" "Java/" "./" "Suto_TicTacToe/" "SutoCard/" "SutoSimon/" "Settings/" "cpp/" "Other/" "fritzing.0.9.2b.32.pc/" "AVR Stuff/" "C_Learning_and_ucontrollers/" "Suto_Calc/" "Arduino/" "Notes_on_Registers_pins_and_IO_reread_until_you_understand.txt" "../")
+
+ ("/home/anthony/Desktop/" (22225 41506 161183 438000) "./" "SpiderOak Hive/" "../" ".directory")
+
+ ("/home/anthony/Workspace/AVR Stuff/4_digit_7_segmenet_display_project/src/$home/.eTemp/" (22223 53647 0 0) "./" "../")
+
+ ("/home/anthony/Workspace/AVR Stuff/4_digit_7_segmenet_display_project/src/$home/" (22223 53647 0 0) "./" "../" ".eTemp/")
+
+ ("/home/anthony/Workspace/AVR Stuff/4_digit_7_segmenet_display_project/src/" (22223 53535 0 0) "$home/" "./" "../" ".git/")
+
+ ("/home/anthony/Workspace/AVR Stuff/4_digit_7_segmenet_display_project/" (22223 59528 0 0) "./" "4_digit_7_segment_display_wire_layout.txt" "src/" "../" "AVR-Programming-Library/" "4_pin_7_segement_display_layout.png")
+
+ ("/home/anthony/Workspace/AVR Stuff/" (22223 58491 0 0) "./" "4_digit_7_segmenet_display_project/" "../" "AVR-Programming-Library/" "atmel_keyboard_interfacing_avr.pdf" "TerminalEmu/" "AVR_pin_Picutres/" ".Trash-1000/")
+
+ ("/home/anthony/Workspace/" (22223 56608 0 0) "./" "Settings/" "Suto_TicTacToe/" "AVR Stuff/" "Suto_Calc/" "SutoSimon/" "Other/" "C_Learning_and_ucontrollers/" "cpp/" "SutoCard/" "../" ".directory" "Java/" "Notes_on_Registers_pins_and_IO_reread_until_you_understand.txt" "AVR-Programming-master/" "GitHub/")
+)
+
+;; ----- ido-unc-hosts-cache -----
+t

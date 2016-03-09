@@ -1,0 +1,1 @@
+cp -Ri .emacs.d .emacs /home/anthony/WorkSpace/Settings/emacs_config/
