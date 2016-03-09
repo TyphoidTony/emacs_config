@@ -183,7 +183,6 @@
 
 	    (set-face-attribute 'default nil :font "Fira Mono 12")
 	    
-
 	    ;;enables paren mode
 	    (show-paren-mode t)
 
