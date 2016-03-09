@@ -33,18 +33,6 @@
 	    (global-set-key (kbd "<C-left>") 'shrink-window-horizontally)
 	    (global-set-key (kbd "<C-right>") 'enlarge-window-horizontally)
 
-	    ;; moves left and right between windows
-	    (defun my-previous-window()
-	      "Previous window"
-	      (interactive)
-	      (other-window -1))           
-	    (global-set-key  (kbd "C-,") 'my-previous-window) 
-	    (global-set-key (kbd  "C-.") 'other-window)
-
-	    ;; switches between previous and next buffer
-	    (global-set-key (kbd "  C-l") 'next-buffer)
-	    (global-set-key (kbd " C-j") 'previous-buffer)
-
 
 	    ;; Toggle window dedication
 	    (defun toggle-window-dedicated ()
@@ -126,10 +114,11 @@
 						  gnus-summary-mode
 						  gnus-article-mode
 						  speedbar-mode
-						  compilation-mode)) 
+						  compilation-mode
+						  text-mode)) 
 	    
 	    (defadvice linum-on (around linum-on-inhibit-for-modes)
-	      "Stop the load of linum-mode for some major modes."
+	      "STOP the load of linum-mode for some major modes."
 	      (unless (member major-mode linum-mode-inhibit-modes-list)
 		ad-do-it))
 
@@ -191,18 +180,23 @@
 	    (setq visible-bell nil)
 
 	    ;;Attempts to set font to Consolas if that font is not available it sets the default font face to Courier
-	    (unless (set-face-attribute 'default nil :font "Courier 12")
-	      (set-face-attribute 'default nil :font "Consolas 12"))
+
+	    (set-face-attribute 'default nil :font "Fira Mono 12")
 	    
 
 	    ;;enables paren mode
 	    (show-paren-mode t)
-	    
-	    (global-set-key (kbd "C-=") 'shell-command)
-	    
+
 	    (setq ido-enable-flex-matching t)
 	    (setq ido-everywhere t)
 	    (ido-mode t)
+	    (global-set-key (kbd "C-x C-b") 'ido-switch-buffer)
+	    
+	    (setq backup-directory-alist '((".*" . "~/.emacs.d/emacs-backup")))
+	    (setq auto-save-file-name-transforms '((".*""~/.emacs.d/emacs_auto-save")))
+	    
+	    (set-frame-parameter (selected-frame) 'alpha '(89 89))
+	    
 	    ;; ##### Start of config file where packages are required #############################
 	    
 	    (require 'gruvbox-theme)
@@ -210,8 +204,8 @@
 	    (require 'powerline)
 	    (powerline-default-theme)
 
-	    (require 'god-mode)
-	    (global-set-key [f2] 'god-mode)
+
+
 
 	    (require 'autopair) 
 	    (autopair-global-mode)
@@ -220,20 +214,11 @@
 
 	    ;;auto-complete code block
 	    (require 'auto-complete)
-	    (ac-config-default)  
-	    (require 'auto-complete-config)
-	    (defun my:ac-c-headers-init ()
-	      (require 'auto-complete-c-headers)
-	      (add-to-list 'ac-sources 'ac-source-c-headers))
-	    (add-hook 'c++-mode-hook 'my:ac-c-headers-init)
-	    (add-hook 'c-mode-hook 'my:ac-c-headers-init)
 	    (auto-complete-mode)
+	    (ac-config-default)  
+
 
 	    (global-set-key (kbd  "C-x C-;") 'iedit-mode)
-
-	    ;;turns on icicles mode minibuffer completion
-	    ;;You can cycle through completion by using Home and End 
-	    (icy-mode 1)
 	    
 	    (require 'yasnippet)
 	    (yas-global-mode 1)
@@ -251,12 +236,12 @@
 	    (custom-set-variables
 	     '(speedbar-show-unknown-files 1)
 	     )
-	    (setq speedbar-use-images nil)
+
 	    (sr-speedbar-refresh-turn-on)
 	    
 	    (require 'fic-mode)
 	    (fic-mode t)
-	    
+
 
 	    (projectile-global-mode)
 	    (unless (setq projectile-indexing-method 'native)
@@ -264,11 +249,7 @@
 	    (setq projectile-enable-caching t)
 
 
-	    (cd "C:/users/null/workspace/");put your own directory here to set as your 'startup' directory. 
-	    (kill-buffer "*scratch*")
-	    (kill-buffer "*GNU Emacs*");If you don't see "No buffer named GNU emacs in the minibuffer the entire init file did not load"
 	    )); end of startup hook
-
 
 
 
@@ -277,19 +258,12 @@
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
- '(auto-save-file-name-transforms (quote ((".*" "/eTemp" t))))
- '(backup-directory-alist (quote ((".*" . "/eTemp"))))
- '(column-number-mode t)
- '(custom-enabled-themes (quote (gruvbox)))
- '(custom-safe-themes
-   (quote
-    ("9e720b0c4ed90ce3735c94705f93b519191f5220e73dbacf6a4d71b89a0a6b0e" default)))
  '(desktop-restore-frames t)
  '(desktop-restore-reuses-frames t)
  '(desktop-save t)
  '(desktop-save-mode t)
  '(fic-highlighted-words (quote ("FIXME" "TODO" "BUG" "KLUDGE" "NOTE")))
- '(icicle-region-background "dark slate gray")
+ '(initial-scratch-message ";;")
  '(menu-bar-mode nil)
  '(neo-click-changes-root t)
  '(neo-smart-open t)
@@ -300,12 +274,13 @@
  '(rainbow-identifiers-face-count 6)
  '(speedbar-show-unknown-files 1)
  '(speedbar-update-flag t)
- '(speedbar-use-images nil)
  '(speedbar-verbosity-level 0)
  '(sr-speedbar-default-width 40)
  '(sr-speedbar-right-side nil)
  '(tool-bar-mode nil))
-;; custom-set-faces was added by Custom.
-;; If you edit it by hand, you could mess it up, so be careful.
-;; Your init file should contain only one such instance.
-;; If there is more than one, they won't work right.
+(custom-set-faces
+ ;; custom-set-faces was added by Custom.
+ ;; If you edit it by hand, you could mess it up, so be careful.
+ ;; Your init file should contain only one such instance.
+ ;; If there is more than one, they won't work right.
+ )
