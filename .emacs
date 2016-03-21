@@ -1,7 +1,8 @@
 (put 'upcase-region 'disabled nil)
 
-					;startup hook starts here ----
-
+					;##################################;
+					;###########startup hook ##########;
+					;##################################;
 (add-hook 'emacs-startup-hook
 	  (lambda ()  
 
@@ -176,8 +177,6 @@
 	      (let ((comint-buffer-maximum-size 0))
 		(comint-truncate-buffer)))
 	    
-
-	    
 	    ;; sets highlight linemode on
 	    (global-hl-line-mode)
 
@@ -206,9 +205,9 @@
 	    (global-set-key (kbd "C-=") 'hs-toggle-hiding)
 	    (add-hook 'hs-minor-mode 'c-mode 'java-mode)
 	    (add-hook 'hs-minor-mode 'java-mode)
-	    
-	    ;; ##### Start of config file where packages are required #############################
-	    
+					;#####################; 
+					;##### Packages ######; 
+					;#####################;
 	    (require 'gruvbox-theme)
 
 	    (require 'powerline)
