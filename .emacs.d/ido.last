@@ -2,6 +2,7 @@
 
 ;; ----- ido-last-directory-list -----
 (
+ ("/home/anthony/WorkSpace/AVR Stuff/4_digit_7_segmenet_display_project/src/" . ".git/")
  ("/home/anthony/WorkSpace/AVR Stuff/4_digit_7_segmenet_display_project/" . "src/")
  ("/home/anthony/WorkSpace/AVR Stuff/" . "4_digit_7_segmenet_display_project/")
  ("/home/anthony/WorkSpace/" . "AVR Stuff/")
@@ -23,24 +24,28 @@
 ;; ----- ido-work-file-list -----
 (
  ".emacs"
+ "test.java"
+ "learning.org"
+ ".emacs_config_push.bash"
+ ".copy_emacs_config.bash"
  "new_install_script.bash"
  "display.c"
  "text.txt"
  "test.txt"
  ".bashrc"
- "package_init.el"
- "main_init.el"
- "emacs_init_2.el"
- "emacs_init_1.el"
 )
 
 ;; ----- ido-dir-file-cache -----
 (
- ("/home/anthony/.emacs.d/" (22240 16638 593573 825000) "ido.last" "./" ".emacs.desktop.lock" "snippets/" "elpa/" "emacs_auto-save/" "projectile-bookmarks.eld" "emacs-backup/" "ido.last~" "ac-comphist.dat" ".emacs.desktop" "auto-save-list/" "../")
+ ("/home/anthony/" (22252 5527 106849 783000) "Music/" ".cache/" ".emacs.d/" "Pictures/" ".fonts/" ".mozilla/" "Public/" ".config/" "test.class" ".adobe/" ".bashrc" ".xsel.log" ".wine/" ".directory" ".gnome2_private/" ".emacs~" "./" ".emacs" "learning.org" ".bash_logout" ".gtkrc-2.0" ".python-eggs/" ".mono/" ".macromedia/" "Downloads/" ".kde/" ".Xauthority" ".face.icon" "test.java" ".gtkrc-2.0-kde4" ".gitconfig" ".gnupg/" ".local/" ".gnome2/" "Desktop/" ".pip/" ".sudo_as_admin_successful" ".profile" ".fonts.conf" ".ssh/" ".emacs_config_push.bash" ".pki/" ".dbus/" "Templates/" "Documents/" "SpiderOak Hive/" ".xsession-errors" ".new_install_script.bash" ".bash_history" ".gconf/" ".face" "Videos/" "WorkSpace/" ".dropbox/" ".recently-used" "../")
 
- ("/home/anthony/WorkSpace/AVR Stuff/4_digit_7_segmenet_display_project/src/" (22238 62932 848352 190000) "main.c" "display.o" "./" "display.c~" "main.o" "Makefile" "README.md" "display.c" "src.hex" "display.h" "src.map" ".git/" "src.elf" "../")
+ ("/home/" (22236 41733 180249 505000) ".directory" "./" "anthony/" "../")
 
- ("/home/anthony/" (22240 15262 614393 998000) "Music/" ".cache/" ".emacs.d/" "Pictures/" ".fonts/" ".mozilla/" "Public/" ".config/" ".adobe/" ".bashrc" ".xsel.log" ".wine/" ".directory" ".emacs~" "./" ".emacs" ".bash_logout" ".gtkrc-2.0" ".python-eggs/" ".mono/" ".macromedia/" "Downloads/" ".kde/" ".Xauthority" ".gnupg/" ".local/" "Desktop/" ".sudo_as_admin_successful" ".profile" ".fonts.conf" ".ssh/" ".pki/" ".dbus/" "Templates/" "Documents/" "SpiderOak Hive/" ".xsession-errors" ".bash_history" ".gconf/" "Videos/" "WorkSpace/" ".recently-used" "../")
+ ("/home/anthony/.emacs.d/" (22240 17566 782619 93000) "ido.last" "./" ".emacs.desktop.lock" "snippets/" "elpa/" "emacs_auto-save/" "projectile-bookmarks.eld" "emacs-backup/" "ido.last~" "ac-comphist.dat" ".emacs.desktop" "auto-save-list/" "../")
+
+ ("/home/anthony/WorkSpace/AVR Stuff/4_digit_7_segmenet_display_project/src/.git/" (22231 33246 0 0) "logs/" "./" "ORIG_HEAD" "config" "description" "objects/" "info/" "FETCH_HEAD" "COMMIT_EDITMSG" "refs/" "hooks/" "index" "HEAD" "../")
+
+ ("/home/anthony/WorkSpace/AVR Stuff/4_digit_7_segmenet_display_project/src/" (22240 17241 677878 612000) "main.c" "display.o" "./" "display.c~" "main.o" "Makefile" "README.md" "display.c" "src.hex" "display.h" "src.map" ".git/" "src.elf" "../")
 
  ("/home/anthony/WorkSpace/AVR Stuff/4_digit_7_segmenet_display_project/" (22231 32521 0 0) "AVR-Programming-Library/" "./" "src/" "4_digit_7_segment_display_wire_layout.txt" "4_pin_7_segement_display_layout.png" "../")
 

@@ -35,7 +35,7 @@
 
 
 	    ;; Toggle window dedication
-	    (defun toggle-window-dedicated ()
+	    (defun tog ()
 	      "Toggle whether the current active window is dedicated or not"
 	      (interactive)
 	      (message
@@ -47,15 +47,11 @@
 	       (current-buffer)))
 
 
-
 	    (require 'custom) ;;start of higlight error line
-	    
 	    (defvar all-overlays ())
-	    
 	    (defun delete-this-overlay(overlay is-after begin end &optional len)
 	      (delete-overlay overlay)
 	      )
-	    
 	    (defun highlight-current-line()
 	      (interactive)
 	      (setq current-point (point))
@@ -97,14 +93,10 @@
 		    )
 		(error nil))
 	      )
-
 	    (setq compilation-finish-function 'highlight-error-lines) ;; End of error line higlight
 
-	    ;; Press [apps] key in each window you want to "freeze" apps key is the right click key
-	    (global-set-key [apps] 'toggle-window-dedicated);This doesn't seem to work on linux OSes so change to what you want/need it to be
 
-
-					; disables linum-mode in specific buffers
+	    ;; disables linum-mode in specific buffers
 	    (setq linum-mode-inhibit-modes-list '(eshell-mode
 						  shell-mode
 						  erc-mode
@@ -115,12 +107,16 @@
 						  gnus-article-mode
 						  speedbar-mode
 						  compilation-mode
-						  text-mode)) 
-	    
+						  text-mode
+						  org-mode)) 
+
 	    (defadvice linum-on (around linum-on-inhibit-for-modes)
 	      "STOP the load of linum-mode for some major modes."
 	      (unless (member major-mode linum-mode-inhibit-modes-list)
 		ad-do-it))
+
+	    (ad-activate 'linum-on)
+	    (global-linum-mode)
 
 	    ;; Removes *messages* from the buffer.
 	    (setq-default message-log-max nil)
@@ -138,6 +134,14 @@
 
 	    (ad-activate 'pop-to-buffer)
 
+	    ;; Removes *scratch* from buffer after the mode has been set.
+	    (defun remove-scratch-buffer ()
+	      (if (get-buffer "*scratch*")
+		  (kill-buffer "*scratch*")))
+	    (add-hook 'after-change-major-mode-hook 'remove-scratch-buffer)
+
+
+
 	    ;; start of mini compile window code
 	    (defun my-compile ()
 	      "Run compile and resize the compile window"
@@ -152,7 +156,7 @@
 		(select-window cur)
 		)
 	      )
-
+	    
 	    (defun my-compilation-hook () 
 	      "Make sure that the compile window is splitting vertically"
 	      (progn
@@ -163,27 +167,29 @@
 		  )
 		)
 	      )
-
 	    (add-hook 'compilation-mode-hook 'my-compilation-hook)
 	    (global-set-key [f10] 'my-compile) ;; end of of mini compile window code
 
-	    (ad-activate 'linum-on)
-	    (global-linum-mode)
+	    ;;can probably be used for any buffer, but should really be used for shell/eshell
+	    (defun clear-shell ()
+	      (interactive)
+	      (let ((comint-buffer-maximum-size 0))
+		(comint-truncate-buffer)))
+	    
 
+	    
 	    ;; sets highlight linemode on
 	    (global-hl-line-mode)
 
 	    ;; No more typing the whole yes or no. Just y or n will do.
 	    (fset 'yes-or-no-p 'y-or-n-p)
 
-	    ;; turns off system sound
+	    ;;turns off visual bell
 	    (setq visible-bell nil)
 
-	    ;;Attempts to set font to Consolas if that font is not available it sets the default font face to Courier
-
+	    ;;Requires Fira mono which you can download for free. 
 	    (set-face-attribute 'default nil :font "Fira Mono 12")
 	    
-
 	    ;;enables paren mode
 	    (show-paren-mode t)
 
@@ -196,6 +202,10 @@
 	    (setq auto-save-file-name-transforms '((".*""~/.emacs.d/emacs_auto-save")))
 	    
 	    (set-frame-parameter (selected-frame) 'alpha '(89 89))
+	    
+	    (global-set-key (kbd "C-=") 'hs-toggle-hiding)
+	    (add-hook 'hs-minor-mode 'c-mode 'java-mode)
+	    (add-hook 'hs-minor-mode 'java-mode)
 	    
 	    ;; ##### Start of config file where packages are required #############################
 	    
@@ -248,8 +258,12 @@
 	      (setq projectile-indexing-method 'alien))
 	    (setq projectile-enable-caching t)
 
+	    (require 'smex )
+	    (global-set-key (kbd "M-x") 'smex)
 
-	    )); end of startup hook
+
+
+	  )); end of startup hook
 
 
 
@@ -269,6 +283,7 @@
  '(neo-smart-open t)
  '(neo-window-position (quote right))
  '(neo-window-width 30)
+ '(org-agenda-files nil)
  '(package-archives (quote (("gnu" . "http://elpa.gnu.org/packages/"))))
  '(pop-up-windows nil)
  '(rainbow-identifiers-face-count 6)

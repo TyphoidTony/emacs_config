@@ -1,0 +1,35 @@
+#include <avr/io.h>
+#include <util/delay.h>
+#include "display.h"
+#include <string.h>
+#define _BV(bit) (1 << (bit))
+#define ly 0b01110011
+
+//Reference for digits 1-4 is PORTC 0-3 detailed in the .txt file
+//no point in trying to use bit wise operations on the segments when I can reference the hexadecial version of the digit and number
+/** 7 segemnt displays have a range of 0-9 and A-F and b-g 
+    https://en.wikipedia.org/wiki/Seven-segment_display
+    if you need to refresh just go to that link
+**/
+//@PERSONAL_NOTE the lower the delay the harder it is to see the transition
+//thus creates the illusion that lights that are receiving the same voltage at different times are indeed on at the same time. 
+
+
+int main(void ){
+  
+  DDRB = 0xff;
+  DDRC = 0xff;
+  
+
+
+  while(1){
+
+    //    demo();
+
+    //    hex_display(ly,0);
+    _print("err");
+
+  }
+
+  return 0;
+}

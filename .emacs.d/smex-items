@@ -1,0 +1,19 @@
+
+;; ----- smex-history -----
+(
+ org-table-insert-hline
+ lsp
+ kcb
+ kill-buffer
+ cd
+ 5x5
+ arp
+)
+
+;; ----- smex-data -----
+(
+ (kill-buffer . 1)
+ (kcb . 3)
+ (lsp . 2)
+ (org-table-insert-hline . 2)
+)

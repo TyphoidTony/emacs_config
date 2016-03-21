@@ -1,0 +1,59 @@
+import java.util.*;
+import java.lang.Process;
+import java.io.*;
+
+public class test {
+
+    public Scanner in;
+
+    public test(){
+
+
+
+	System.out.println("Enter a command");
+	in = new Scanner(System.in);
+	String input = in.next();
+	run(input);
+    }
+	
+
+    public void run(String input){
+
+
+	Process proc = Runtime.getRuntime().exec(input);
+
+
+
+	BufferedReader reader =  
+	    new BufferedReader(new InputStreamReader(proc.getInputStream()));
+
+	String line = "";
+	while((line = reader.readLine()) != null) {
+	    System.out.print(line + "\n");
+	}
+
+	proc.waitFor();   
+
+    }catch(InterruptedException ie){
+	//
+
+    }catch(IOException e){
+	//
+    }
+
+}
+
+
+
+public static void main(String[] args) throws IOException{
+
+
+    new test();
+
+
+
+
+
+
+}
+}

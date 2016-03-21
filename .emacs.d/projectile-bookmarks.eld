@@ -1,1 +1,1 @@
-("~/WorkSpace/AVR Stuff/4_digit_7_segmenet_display_project/src/")
+("~/WorkSpace/Projects/7_segment_display/Suto_dis/src/" "~/WorkSpace/AVR Stuff/4_digit_7_segmenet_display_project/src/")
