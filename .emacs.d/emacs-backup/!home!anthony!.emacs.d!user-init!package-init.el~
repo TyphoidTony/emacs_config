@@ -54,6 +54,6 @@
 (require 'fixmee)
 (fixmee-mode t)
 
-(require 'golden-ratio)
-(golden-ratio-mode t)
+
+
 

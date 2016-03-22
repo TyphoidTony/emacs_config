@@ -10,10 +10,6 @@
 
 
 
-
-
-
-
 	    ;;90% of my config are in these files
 	    (load "~/.emacs.d/user-init/user-functions-init")
 	    (load "~/.emacs.d/user-init/user-init")

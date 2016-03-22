@@ -7,13 +7,6 @@
 (add-hook 'emacs-startup-hook
 	  (lambda ()  
 
-	    (defun small-split ()
-	      (split-window-below)
-	      (interactive)
-	      (shrink-window (- 10))
-	      (windmove-down)
-	      (ansi-term "bash")
-	      )
 
 
 
