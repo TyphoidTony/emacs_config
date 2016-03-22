@@ -2,6 +2,10 @@
 					;##### Packages ######; 
 					;#####################;
 
+
+
+(require 'fixmee)
+(fixmee-mode t)
 (require 'gruvbox-theme)
 
 
@@ -54,5 +58,5 @@
 
 
 
-(fic-mode) 
+
 

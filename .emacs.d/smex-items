@@ -13,8 +13,8 @@
 ;; ----- smex-data -----
 (
  (kill-buffer . 1)
- (kcb . 43)
- (lsp . 4)
+ (kcb . 48)
+ (lsp . 5)
  (org-table-insert-hline . 2)
  (shell . 3)
  (shell-command . 1)

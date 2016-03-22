@@ -1,0 +1,6 @@
+cp -R .emacs.d .emacs /home/anthony/WorkSpace/Settings/emacs_config/
+
+git add .emacs.d/
+git add .emacs
+
+git commit -m "Updated Changes will reflect in README"

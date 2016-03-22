@@ -1,11 +1,11 @@
 * TODO Simple list :TODO
 
-** :RED:
-   -Apples(Sometimes)
-   -Other things
+** TODO 								:RED:THING:DUE: 
+   -Apples(Sometimes) 
+   -Other things  :DUE <2016-03-21 Mon>
    
 
-* Tables 
+** Tables 
 
 | ! | A | B | C | D | E |
 |---+---+---+---+---+---|
@@ -14,7 +14,7 @@
 |   |   |   |   | 4 |   |
 |   |   |   |   | - |   |
 |---+---+---+---+---+---|
-|   |   |   |   | 9 |    |
+|   |   |   |   | 9 |   |
 |   |   |   |   |   |   |
 #+TBLFM: $5=vsum(@2..4)
 

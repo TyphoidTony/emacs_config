@@ -1,9 +1,7 @@
 					;#####################; 
 					;##### Packages ######; 
 					;#####################;
-(require 'fic-mode)
 
-(fic-mode) 
 
 (require 'gruvbox-theme)
 
@@ -53,9 +51,5 @@
 (require 'smex )
 (global-set-key (kbd "M-x") 'smex)
 
-
-
-
-
-
-
+(require 'fixmee)
+(fixmee-mode t)
