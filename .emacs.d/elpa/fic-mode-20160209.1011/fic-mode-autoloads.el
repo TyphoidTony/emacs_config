@@ -3,19 +3,14 @@
 ;;; Code:
 (add-to-list 'load-path (or (file-name-directory #$) (car load-path)))
 
-;;;### (autoloads nil "fic-mode" "fic-mode.el" (22238 61283 617208
-;;;;;;  135000))
+;;;### (autoloads nil "fic-mode" "fic-mode.el" (22256 10994 506361
+;;;;;;  102000))
 ;;; Generated autoloads from fic-mode.el
 
 (autoload 'fic-mode "fic-mode" "\
-highlight FIXMEs in comments and strings (as well as TODO BUG and KLUDGE
+Fic mode -- minor mode for highlighting FIXME/TODO in comments
 
 \(fn &optional ARG)" t nil)
-
-(autoload 'turn-on-fic-mode "fic-mode" "\
-turn fic-mode on
-
-\(fn)" t nil)
 
 ;;;***
 

@@ -1,0 +1,4 @@
+
+(defun snutter()
+  (interactive)
+  ('shell))

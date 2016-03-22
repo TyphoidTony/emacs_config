@@ -2,6 +2,9 @@
 
 ;; ----- ido-last-directory-list -----
 (
+ ("/home/anthony/.emacs.d/config/" . "native/")
+ ("/home/anthony/.emacs.d/" . "user-init/")
+ ("/home/anthony/" . ".emacs.d/")
  ("/home/anthony/WorkSpace/AVR Stuff/4_digit_7_segmenet_display_project/src/" . ".git/")
  ("/home/anthony/WorkSpace/AVR Stuff/4_digit_7_segmenet_display_project/" . "src/")
  ("/home/anthony/WorkSpace/AVR Stuff/" . "4_digit_7_segmenet_display_project/")
@@ -15,33 +18,43 @@
 
 ;; ----- ido-work-directory-list -----
 (
+ "/home/anthony/.emacs.d/user-init/"
  "/home/anthony/"
- "/home/anthony/WorkSpace/AVR Stuff/4_digit_7_segmenet_display_project/src/"
+ "/home/anthony/.emacs.d/config/"
  "/home/anthony/.emacs.d/"
+ "/home/anthony/WorkSpace/AVR Stuff/4_digit_7_segmenet_display_project/src/"
  "/home/anthony/Workspace/AVR Stuff/4_digit_7_segmenet_display_project/src/"
 )
 
 ;; ----- ido-work-file-list -----
 (
+ "package-init.el"
+ "user-functions-init.el"
  ".emacs"
- "test.java"
- "learning.org"
- ".emacs_config_push.bash"
- ".copy_emacs_config.bash"
- "new_install_script.bash"
- "display.c"
- "text.txt"
- "test.txt"
- ".bashrc"
+ "user-init.el"
+ "ido-init.el"
+ "key-binds.el"
+ "misc-init.el"
+ "defined-functions.el"
+ "defined-functions"
+ "test.el"
 )
 
 ;; ----- ido-dir-file-cache -----
 (
- ("/home/anthony/" (22252 5527 106849 783000) "Music/" ".cache/" ".emacs.d/" "Pictures/" ".fonts/" ".mozilla/" "Public/" ".config/" "test.class" ".adobe/" ".bashrc" ".xsel.log" ".wine/" ".directory" ".gnome2_private/" ".emacs~" "./" ".emacs" "learning.org" ".bash_logout" ".gtkrc-2.0" ".python-eggs/" ".mono/" ".macromedia/" "Downloads/" ".kde/" ".Xauthority" ".face.icon" "test.java" ".gtkrc-2.0-kde4" ".gitconfig" ".gnupg/" ".local/" ".gnome2/" "Desktop/" ".pip/" ".sudo_as_admin_successful" ".profile" ".fonts.conf" ".ssh/" ".emacs_config_push.bash" ".pki/" ".dbus/" "Templates/" "Documents/" "SpiderOak Hive/" ".xsession-errors" ".new_install_script.bash" ".bash_history" ".gconf/" ".face" "Videos/" "WorkSpace/" ".dropbox/" ".recently-used" "../")
+ ("/home/anthony/.emacs.d/user-init/" (22256 12278 749003 703000) "user-init.el" ".directory" "./" "package-init.el" "ido-init.el" "user-functions-init.el" "../")
+
+ ("/home/anthony/.emacs.d/" (22256 12337 677270 159000) "ido.last" ".directory" "./" ".emacs.desktop.lock" "snippets/" "smex-items" "elpa/" "emacs_auto-save/" "projectile-bookmarks.eld" "emacs-backup/" "session.10706300000145831167000000015360058" "ido.last~" "ac-comphist.dat" "user-init/" ".emacs.desktop" "auto-save-list/" "../")
+
+ ("/home/anthony/" (22256 12287 973043 847000) "Music/" ".cache/" ".emacs.d/" "Pictures/" ".fonts/" ".mozilla/" "Public/" ".config/" "test.class" ".adobe/" ".bashrc" ".xsel.log" ".wine/" ".directory" ".gnome2_private/" ".emacs~" "./" ".emacs" "learning.org" ".bash_logout" ".gtkrc-2.0" ".python-eggs/" ".mono/" ".macromedia/" "Downloads/" ".kde/" ".Xauthority" ".face.icon" "test.java" ".gtkrc-2.0-kde4" ".gitconfig" ".gnupg/" ".local/" ".gnome2/" "Desktop/" ".pip/" ".sudo_as_admin_successful" ".profile" ".fonts.conf" ".ssh/" ".emacs_config_push.bash" ".pki/" ".dbus/" "Templates/" "Documents/" "SpiderOak Hive/" ".xsession-errors" ".new_install_script.bash" ".bash_history" ".gconf/" ".face" "Videos/" "WorkSpace/" ".recently-used" "../")
+
+ ("/home/anthony/.emacs.d/config/" (22256 7417 639184 451000) "defined-functions.el" ".directory" "./" "test.el" "../")
+
+ ("/home/anthony/.emacs.d/config/native/" (22256 6435 527632 801000) "./" "../")
+
+ ("/home/anthony/.emacs.d/Config-init/" (22256 5321 283069 614000) "./" "test.el" "../")
 
  ("/home/" (22236 41733 180249 505000) ".directory" "./" "anthony/" "../")
-
- ("/home/anthony/.emacs.d/" (22240 17566 782619 93000) "ido.last" "./" ".emacs.desktop.lock" "snippets/" "elpa/" "emacs_auto-save/" "projectile-bookmarks.eld" "emacs-backup/" "ido.last~" "ac-comphist.dat" ".emacs.desktop" "auto-save-list/" "../")
 
  ("/home/anthony/WorkSpace/AVR Stuff/4_digit_7_segmenet_display_project/src/.git/" (22231 33246 0 0) "logs/" "./" "ORIG_HEAD" "config" "description" "objects/" "info/" "FETCH_HEAD" "COMMIT_EDITMSG" "refs/" "hooks/" "index" "HEAD" "../")
 

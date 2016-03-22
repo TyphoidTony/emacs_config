@@ -1,19 +1,27 @@
 
 ;; ----- smex-history -----
 (
- org-table-insert-hline
- lsp
  kcb
- kill-buffer
- cd
- 5x5
- arp
+ lsp
+ customize-group
+ isearch-delete-char
+ shell
+ org-time-stamp
+ org-table-insert-hline
 )
 
 ;; ----- smex-data -----
 (
  (kill-buffer . 1)
- (kcb . 3)
- (lsp . 2)
+ (kcb . 43)
+ (lsp . 4)
  (org-table-insert-hline . 2)
+ (shell . 3)
+ (shell-command . 1)
+ (org-date-from-calendar . 1)
+ (org-time-stamp . 3)
+ (isearch-delete-char . 3)
+ (snutter . 5)
+ (turn-on-fic-mode . 1)
+ (customize-group . 1)
 )

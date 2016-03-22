@@ -1,0 +1,159 @@
+					;########################
+					;####kills current Buffer####
+					;############################
+(defun kcb()
+  (interactive)
+  (kill-buffer))
+					;########################
+					;#### Lists Packages ####
+					;########################
+
+(defun lsp()
+  (interactive)
+  (list-packages))
+					;###########################
+					;#### Window resize keys####
+					;###########################
+
+(global-set-key (kbd "<C-up>") 'shrink-window)
+(global-set-key (kbd "<C-down>") 'enlarge-window)
+(global-set-key (kbd "<C-left>") 'shrink-window-horizontally)
+(global-set-key (kbd "<C-right>") 'enlarge-window-horizontally)
+
+
+					;###################################################
+					;####Disables Vertical and Horizontal scrollbars####
+					;###################################################
+
+(scroll-bar-mode -1)
+(add-hook 'after-make-frame-functions
+	  '(lambda (frame)
+	     (modify-frame-parameters frame
+				      '((vertical-scroll-bars . nil)
+					(horizontal-scroll-bars . nil)))))
+
+
+					;##############################
+					;#### Toggle window dedication####
+(defun tog ()
+  "Toggle whether the current active window is dedicated or not"
+  (interactive)
+  (message
+   (if (let (window (get-buffer-window (current-buffer)))
+	 (set-window-dedicated-p window 
+				 (not (window-dedicated-p window))))
+       "Window '%s' is dedicated"
+     "Window '%s' is normal")
+   (current-buffer)))
+
+
+
+
+					;#############################
+					;#### Highlight Error Line####
+					;#############################
+(require 'custom) 
+(defvar all-overlays ())
+(defun delete-this-overlay(overlay is-after begin end &optional len)
+  (delete-overlay overlay)
+  )
+(defun highlight-current-line()
+  (interactive)
+  (setq current-point (point))
+  (beginning-of-line)
+  (setq beg (point))
+  (forward-line 1)
+  (setq end (point))
+  ;; Create and place the overlay
+  (setq error-line-overlay (make-overlay 1 1))
+  
+  ;; Append to list of all overlays
+  (setq all-overlays (cons error-line-overlay all-overlays))
+  
+  (overlay-put error-line-overlay
+	       'face '(background-color . "red"))
+  (overlay-put error-line-overlay
+	       'modification-hooks (list 'delete-this-overlay))
+  (move-overlay error-line-overlay beg end)
+  (goto-char current-point)
+  )
+
+(defun delete-all-overlays()
+  (while all-overlays
+    (delete-overlay (car all-overlays))
+    (setq all-overlays (cdr all-overlays))
+    )
+  )
+
+(defun highlight-error-lines(compilation-buffer process-result)
+  (interactive)
+  (delete-all-overlays)
+  (condition-case nil
+      (while t
+	(next-error)
+	(highlight-current-line)
+	(save-excursion
+	  (compilation-next-error-function 0)
+	  (highlight-current-line))
+	)
+    (error nil))
+  )
+(setq compilation-finish-function 'highlight-error-lines) 
+
+					;###############################################
+					;####disables linum-mode in specific buffers####
+					;###############################################
+
+(setq linum-mode-inhibit-modes-list '(eshell-mode
+				      shell-mode
+				      erc-mode
+				      jabber-roster-mode
+				      jabber-chat-mode
+				      gnus-group-mode
+				      gnus-summary-mode
+				      gnus-article-mode
+				      speedbar-mode
+				      compilation-mode
+				      text-mode
+				      org-mode)) 
+
+(defadvice linum-on (around linum-on-inhibit-for-modes)
+  "STOP the load of linum-mode for some major modes."
+  (unless (member major-mode linum-mode-inhibit-modes-list)
+    ad-do-it))
+
+(ad-activate 'linum-on)
+(global-linum-mode)
+
+					;######################################
+					;#### Add melpa to package Archive ####
+					;######################################
+
+(when (>= emacs-major-version 24)
+  (require 'package)
+  (package-initialize)
+  (add-to-list 'package-archives '("melpa" . "http://melpa.milkbox.net/packages/") t)
+  )
+
+;; Removes *messages* from the buffer.
+(setq-default message-log-max nil)
+(kill-buffer "*Messages*")
+
+;; Removes *Completions* from buffer after you've opened a file.
+(add-hook 'minibuffer-exit-hook
+	  '(lambda ()
+	     (let ((buffer "*Completions*"))
+	       (and (get-buffer buffer)
+		    (kill-buffer buffer)))))
+
+(defadvice pop-to-buffer (before cancel-other-window first)
+  (ad-set-arg 1 nil))
+
+(ad-activate 'pop-to-buffer)
+
+;; Removes *scratch* from buffer after the mode has been set.
+(defun remove-scratch-buffer ()
+  (if (get-buffer "*scratch*")
+      (kill-buffer "*scratch*")))
+(add-hook 'after-change-major-mode-hook 'remove-scratch-buffer)
+

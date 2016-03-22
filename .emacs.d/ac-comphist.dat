@@ -1,58 +1,72 @@
-((("require" .
-   [1 0 0 0 0 0 0])
-  ("ace-window" .
-   [2 0 0 0 0 0 0 0 0 0])
-  ("java-mode" .
-   [1 0 0 0 0 0 0 0 0])
-  ("c-mode" .
-   [1 0 0 0 0 0])
-  ("hs-minor-mode" .
-   [0 0 0 0 0 0 1 0 0 0 0 0 1])
-  ("hs-toggle-hiding" .
-   [0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0])
-  ("toggle-window-dedicated" .
-   [0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0])
-  ("cmd" .
-   [1 0 0])
-  ("my-shell-hook" .
-   [1 0 0 0 0 0 0 0 0 0 0 0 0])
-  ("shell-mode" .
-   [0 0 0 0 0 0 1 0 0 0])
-  ("add-hook" .
-   [2 0 0 0 0 0 0 0])
-  (".emacs" .
-   [1 0 0 0 0 0])
-  ("auto-save-file-name-transforms" .
-   [0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
-  ("quote" .
+((("load" .
+   [1 0 0 0])
+  ("shell" .
    [1 0 0 0 0])
-  ("backup-directory-alist" .
-   [0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0])
-  ("d" .
+  ("s" .
    [1])
-  ("delb" .
-   [0 0 1 0])
-  ("def" .
+  ("defun" .
+   [2 0 0 0 0])
+  ("org" .
    [1 0 0])
-  ("shell-command" .
-   [0 0 0 0 0 0 0 0 1 0 0 0 0])
-  ("interactive" .
-   [0 0 0 0 0 0 1 0 0 0 0])
-  ("global-set-key" .
-   [0 0 0 0 0 0 0 0 0 0 3 0 0 2])
-  ("minibuffer-prompt" .
-   [1 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0])
-  ("minibuffer-window" .
-   [0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0])
-  ("minibuf" .
-   [0 0 0 0 1 0 0])
-  ("ibuffer" .
-   [0 0 0 1 0 0 0])
-  ("minibuffer" .
-   [1 0 0 0 0 0 0 0 0 0])
-  ("minibuffer-local-completion-map" .
-   [0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1])
   ("minibuffer-complete-and-exit" .
    [0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0])
-  ("org" .
-   [1 0 0])))
+  ("minibuffer-local-completion-map" .
+   [0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1])
+  ("minibuffer" .
+   [1 0 0 0 0 0 0 0 0 0])
+  ("ibuffer" .
+   [0 0 0 1 0 0 0])
+  ("minibuf" .
+   [0 0 0 0 1 0 0])
+  ("minibuffer-window" .
+   [0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0])
+  ("minibuffer-prompt" .
+   [1 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0])
+  ("global-set-key" .
+   [0 0 0 0 0 0 0 0 0 0 3 0 0 2])
+  ("interactive" .
+   [0 0 0 0 0 1 1 0 0 0 0])
+  ("shell-command" .
+   [0 0 0 0 0 0 0 0 1 0 0 0 0])
+  ("def" .
+   [1 0 0])
+  ("delb" .
+   [0 0 1 0])
+  ("d" .
+   [1])
+  ("backup-directory-alist" .
+   [0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("quote" .
+   [1 0 0 0 0])
+  ("auto-save-file-name-transforms" .
+   [0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
+  (".emacs" .
+   [1 0 0 0 0 0])
+  ("add-hook" .
+   [3 0 0 0 0 0 0 0])
+  ("shell-mode" .
+   [0 0 0 0 0 0 1 0 0 0])
+  ("my-shell-hook" .
+   [1 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("cmd" .
+   [1 0 0])
+  ("toggle-window-dedicated" .
+   [0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0])
+  ("hs-toggle-hiding" .
+   [0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0])
+  ("hs-minor-mode" .
+   [0 0 0 0 0 0 1 0 0 0 0 0 1])
+  ("c-mode" .
+   [1 0 0 0 0 0])
+  ("java-mode" .
+   [1 0 0 0 0 0 0 0 0])
+  ("ace-window" .
+   [2 0 0 0 0 0 0 0 0 0])
+  ("require" .
+   [4 0 0 0 0 0 0])
+  ("load-user-file" .
+   [1 0 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("fic-mode" .
+   [3 0 0 1 1 1 0 0])
+  ("elisp" .
+   [0 0 0 0 1])))
