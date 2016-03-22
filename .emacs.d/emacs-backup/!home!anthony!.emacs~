@@ -13,9 +13,6 @@
 	    (load "~/.emacs.d/user-init/ido-init")
 	    (load "~/.emacs.d/user-init/package-init")
 
-
-
-
 	    )); end of startup hook 
 
 
