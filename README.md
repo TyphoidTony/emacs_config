@@ -3,8 +3,8 @@ Personal settings for emacs. <br>
 My somewhat small config file  <br>
 Feel free to copy any of the commands found within
 
-Font used: http://www.carrois.com/fira-4-1/#download
-As a side note my emacs is semi-transparent 
+Font used: http://www.carrois.com/fira-4-1/#download <br>
+As a side note my emacs is semi-transparent. 
 
 ![Image of Emacs](https://raw.githubusercontent.com/TyphoidTony/emacs_config/master/Emacs.png "image")
 
@@ -16,7 +16,10 @@ Parentheses around commands are just used to denote individual sets of commands
 
 - lsp : lists packages
 
+- small-term : opens up a small ANSI-Term below the window. 
+
 - tog: Taken from a stack overflow question about how to lock buffers 
+
 - clear-shell : from emacs wiki is a 'clear' command of sorts for the shell
 
 - (C-up) (C-down) (C-left) (C-right) : shrinks, enlarges as well as shrinks and enlarges horizontally respectively
@@ -30,9 +33,8 @@ Parentheses around commands are just used to denote individual sets of commands
 - Aggressiv-indent
 - auto-complete
 - auto-pair
-- fic-mode
+- fixmee
 - gruvbox-theme
-- icicles
 - ido
 - iedit
 - paredit
@@ -48,7 +50,7 @@ Parentheses around commands are just used to denote individual sets of commands
 #TODO 
 Simple todo list for my config file. 
 
-- Break config into 'modules' to loaded by the main config file. 
+- Break config into 'modules' to loaded by the main config file. (Have started doing this) 
 - On 'fresh install' of emacs have emacs auto-install all the needed packages. 
 Might wait until emacs25 so as to not install old packages from the gnu source instead of the melpa source
 - Get better auto-complete functionality for C-mode
