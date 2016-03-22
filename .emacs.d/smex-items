@@ -1,27 +1,38 @@
 
 ;; ----- smex-history -----
 (
+ small-split
+ ansi-term
  kcb
  lsp
- customize-group
- isearch-delete-char
+ term
  shell
- org-time-stamp
- org-table-insert-hline
+ tog
 )
 
 ;; ----- smex-data -----
 (
  (kill-buffer . 1)
- (kcb . 48)
- (lsp . 5)
+ (kcb . 67)
+ (lsp . 8)
  (org-table-insert-hline . 2)
- (shell . 3)
+ (shell . 10)
  (shell-command . 1)
  (org-date-from-calendar . 1)
  (org-time-stamp . 3)
  (isearch-delete-char . 3)
  (snutter . 5)
  (turn-on-fic-mode . 1)
- (customize-group . 1)
+ (customize-group . 2)
+ (temp-buffer-resize-mode . 4)
+ (my-shell . 9)
+ (tog . 5)
+ (small-split . 33)
+ (golden-ratio . 1)
+ (golden-ratio-mode . 1)
+ (windmove-default-keybindings . 1)
+ (golden-ratio-toggle-widescreen . 1)
+ (golden-ratio-adjust . 3)
+ (term . 1)
+ (ansi-term . 3)
 )

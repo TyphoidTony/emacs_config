@@ -80,3 +80,5 @@
 
 (global-set-key (kbd "C-=") 'hs-toggle-hiding)
 (add-hook 'hs-minor-mode  'c-mode)
+
+(windmove-default-keybindings)

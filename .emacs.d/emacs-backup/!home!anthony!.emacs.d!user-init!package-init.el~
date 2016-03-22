@@ -3,9 +3,6 @@
 					;#####################;
 
 
-
-(require 'fixmee)
-(fixmee-mode t)
 (require 'gruvbox-theme)
 
 
@@ -54,9 +51,9 @@
 (require 'smex )
 (global-set-key (kbd "M-x") 'smex)
 
+(require 'fixmee)
+(fixmee-mode t)
 
-
-
-
-
+(require 'golden-ratio)
+(golden-ratio-mode t)
 

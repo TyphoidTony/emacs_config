@@ -133,3 +133,16 @@
   (interactive)
   (let ((comint-buffer-maximum-size 0))
     (comint-truncate-buffer)))
+
+					;##################################
+					;#### Starts A Small Ansi-Term ####
+					;##################################
+
+
+(defun small-term ()
+  (split-window-below)
+  (interactive)
+  (shrink-window (- 10))
+  (windmove-down)
+  (ansi-term "bash")
+  )
