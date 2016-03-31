@@ -4,7 +4,7 @@ My somewhat small config file  <br>
 Feel free to copy any of the commands found within
 
 Font used: http://www.carrois.com/fira-4-1/#download <br>
-As a side note my emacs is semi-transparent. 
+ 
 
 ![Image of Emacs](https://raw.githubusercontent.com/TyphoidTony/emacs_config/master/Emacs.png "image")
 

@@ -10,11 +10,12 @@
 
 
 
-	    ;;90% of my config are in these files
+	    ;;99% of my config are in these files
 	    (load "~/.emacs.d/user-init/user-functions-init")
 	    (load "~/.emacs.d/user-init/user-init")
 	    (load "~/.emacs.d/user-init/ido-init")
 	    (load "~/.emacs.d/user-init/package-init")
+	    (load "~/.emacs.d/user-init/projectile-init")
 	    )); end of startup hook 
 
 
@@ -37,6 +38,7 @@
  '(rainbow-identifiers-face-count 6)
  '(speedbar-show-unknown-files 1)
  '(speedbar-update-flag t)
+ '(speedbar-use-images nil)
  '(speedbar-verbosity-level 0)
  '(sr-speedbar-default-width 40)
  '(sr-speedbar-refresh-turn-on nil)

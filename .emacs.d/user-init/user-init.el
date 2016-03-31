@@ -76,7 +76,7 @@
 (setq auto-save-file-name-transforms '((".*""~/.emacs.d/emacs_auto-save")))
 
 
-(set-frame-parameter (selected-frame) 'alpha '(89 89))
+;(set-frame-parameter (selected-frame) 'alpha '(89 89))
 
 (global-set-key (kbd "C-=") 'hs-toggle-hiding)
 (add-hook 'hs-minor-mode  'c-mode)

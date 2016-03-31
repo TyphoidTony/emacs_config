@@ -2,51 +2,72 @@
 ;; --------------------------------------------------------------------------
 ;; Desktop File for Emacs
 ;; --------------------------------------------------------------------------
-;; Created Tue Mar 22 09:03:44 2016
+;; Created Thu Mar 31 07:53:56 2016
 ;; Desktop file format version 206
-;; Emacs version 24.5.1
+;; Emacs version 24.3.1
 
 ;; Global section:
-(setq desktop-saved-frameset [frameset 1 (22257 17072 669348 691000) (desktop . "206") "anthony@pc" nil nil ((((font-backend xft x) (font . "-unknown-Fira Mono-normal-normal-normal-*-16-*-*-*-m-0-iso10646-1") (font-parameter . "Fira Mono 12") (border-width . 0) (internal-border-width . 0) (right-divider-width . 0) (bottom-divider-width . 0) (vertical-scroll-bars) (foreground-color . "#fdf4c1") (background-color . "#282828") (mouse-color . "black") (border-color . "black") (screen-gamma) (line-spacing) (left-fringe . 10) (right-fringe . 10) (scroll-bar-foreground . "#31363b") (scroll-bar-background . "#eff0f1") (menu-bar-lines . 0) (tool-bar-lines . 0) (title) (wait-for-wm . t) (fullscreen) (tool-bar-position . top) (icon-type . t) (auto-raise) (auto-lower) (cursor-type . box) (scroll-bar-width . 0) (alpha 89 89) (horizontal-scroll-bars . t) (display-type . color) (background-mode . dark) (cursor-color . "#fdf4c1") (sticky) (environment) (powerline-cache) (frameset--id . "6197-1BC9-11E5-3E06") (frameset--mini t . t) (modeline . t) (minibuffer . t) (unsplittable) (icon-name) (display . ":0") (explicit-name) (maximized) (visibility . t) (height . 48) (width . 180) (left . 63) (top . 18)) ((min-height . 8) (min-width . 50) (min-height-ignore . 5) (min-width-ignore . 8) (min-height-safe . 2) (min-width-safe . 4) (min-pixel-height . 160) (min-pixel-width . 500) (min-pixel-height-ignore . 100) (min-pixel-width-ignore . 80) (min-pixel-height-safe . 40) (min-pixel-width-safe . 40)) hc (pixel-width . 1820) (pixel-height . 940) (total-width . 182) (total-height . 47) (normal-height . 1.0) (normal-width . 1.0) (combination-limit) (leaf (pixel-width . 400) (pixel-height . 940) (total-width . 40) (total-height . 47) (normal-height . 1.0) (normal-width . 0.21978021978021978) (buffer "*SPEEDBAR*" (selected) (hscroll . 0) (fringes 10 10 nil) (margins nil) (scroll-bars 0 0 t nil) (vscroll . 0) (dedicated . t) (point . 111) (start . 1))) (vc (last . t) (pixel-width . 1420) (pixel-height . 940) (total-width . 142) (total-height . 47) (normal-height . 1.0) (normal-width . 0.7802197802197802) (combination-limit) (leaf (pixel-width . 1420) (pixel-height . 660) (total-width . 142) (total-height . 33) (normal-height . 0.7127659574468085) (normal-width . 1.0) (buffer "*Packages*" (selected . t) (hscroll . 0) (fringes 10 10 nil) (margins 4) (scroll-bars 0 0 t nil) (vscroll . 0) (dedicated) (point . 1) (start . 1))) (leaf (last . t) (pixel-width . 1420) (pixel-height . 280) (total-width . 142) (total-height . 14) (normal-height . 0.2872340425531915) (normal-width . 1.0) (buffer "*ansi-term*" (selected) (hscroll . 0) (fringes 10 10 nil) (margins 2) (scroll-bars 0 0 t nil) (vscroll . 0) (dedicated) (point . 2917) (start . 2865))))))])
 (setq desktop-missing-file-warning nil)
 (setq tags-file-name nil)
 (setq tags-table-list nil)
-(setq search-ring '("term" "elscreen" "mini" "golden" "fix" "fixme" "sr" "packages" "gruv" "Config-init" "Pakcagtes" "packages" "pakcages" "ace-windw" "ace" "packages"))
+(setq search-ring '("w3m" "images" "fira" "term" "elscreen" "mini" "golden" "fix" "fixme" "sr" "packages" "gruv" "Config-init" "Pakcagtes" "packages" "pakcages"))
 (setq regexp-search-ring nil)
 (setq register-alist nil)
-(setq file-name-history '("/home/anthony/.emacs" "/home/anthony/.emacs.d/user-init/user-functions-init.el" "/home/anthony/.emacs" "/home/anthony/.emacs.d/user-init/user-init.el" "/home/anthony/.emacs.d/user-init/user-functions-init.el" "/home/anthony/.emacs" "/home/anthony/.emacs_config_push.bash" "/home/anthony/.emacs.d/user-init/package-init.el" "/home/anthony/.emacs.d/user-init/ido-init.el" "~/.emacs.d/user-init/package-init.el" "/home/anthony/.emacs.d/user-init/package-init.el" "/home/anthony/.emacs.d/user-init/user-functions-init.el" "/home/anthony/.emacs" "/home/anthony/.emacs.d/user-init/package-init.el" "/home/anthony/.emacs" "/home/anthony/.emacs.d/user-init/user-init.el" "/home/anthony/.emacs.d/user-init/ido-init.el" "/home/anthony/.emacs.d/user-init/key-binds.el" "/home/anthony/.emacs.d/user-init/misc-init.el" "/home/anthony/.emacs.d/user-init/defined-functions.el" "/home/anthony/.emacs.d/config/key-binds.el" "/home/anthony/.emacs.d/config/defined-functions.el" "/home/anthony/.emacs.d/config/defined-functions" "/home/anthony/.emacs.d/config/test.el" "/home/anthony/.emacs.d/test.el" "/home/anthony/.emacs" "~/.emacs.d/Config-init/test.el" "/home/anthony/learning.org" "/home/anthony/.emacs" "/home/anthony/test.java" "/home/anthony/.emacs" "/home/anthony/learning.org" "/home/anthony/.emacs" "/home/anthony/test.java" "/home/anthony/.emacs_config_push.bash" "/home/anthony/.copy_emacs_config.bash" "/home/anthony/.emacs" "/home/anthony/new_install_script.bash" "/home/anthony/.emacs" "/home/anthony/WorkSpace/AVR Stuff/4_digit_7_segmenet_display_project/src/display.c" "/home/anthony/.emacs" "~/.emacs"))
+(setq file-name-history '("/home/anthony/.emacs.d/user-init/user-functions-init.el" "/home/anthony/.emacs.d/user-init/user_dired.el" "/home/anthony/scratch.txt" "/home/anthony/.emacs.d/user-init/user-init.el" "/home/anthony/.emacs" "~/.emacs.d/user-init/user-init.el" "/home/anthony/.emacs" "/home/anthony/.emacs.d/user-init/user-functions-init.el" "/home/anthony/.emacs" "/home/anthony/.emacs.d/user-init/user-init.el" "/home/anthony/.emacs.d/user-init/user-functions-init.el" "/home/anthony/.emacs" "/home/anthony/.emacs_config_push.bash" "/home/anthony/.emacs.d/user-init/package-init.el" "/home/anthony/.emacs.d/user-init/ido-init.el" "~/.emacs.d/user-init/package-init.el" "/home/anthony/.emacs.d/user-init/package-init.el" "/home/anthony/.emacs.d/user-init/user-functions-init.el" "/home/anthony/.emacs" "/home/anthony/.emacs.d/user-init/package-init.el" "/home/anthony/.emacs" "/home/anthony/.emacs.d/user-init/user-init.el" "/home/anthony/.emacs.d/user-init/ido-init.el" "/home/anthony/.emacs.d/user-init/key-binds.el" "/home/anthony/.emacs.d/user-init/misc-init.el" "/home/anthony/.emacs.d/user-init/defined-functions.el" "/home/anthony/.emacs.d/config/key-binds.el" "/home/anthony/.emacs.d/config/defined-functions.el" "/home/anthony/.emacs.d/config/defined-functions" "/home/anthony/.emacs.d/config/test.el"))
 
 ;; Buffer section -- buffers listed in same order as in buffer list:
 (desktop-create-buffer 206
-  "/home/anthony/.emacs"
-  ".emacs"
+  "/home/anthony/.emacs.d/user-init/user-functions-init.el"
+  "user-functions-init.el"
   'emacs-lisp-mode
-  '(autopair-mode yas-minor-mode projectile-mode linum-mode auto-complete-mode aggressive-indent-mode rainbow-identifiers-mode)
-  361
-  '(215 nil)
+  '(linum-mode autopair-mode auto-complete-mode yas-minor-mode projectile-mode aggressive-indent-mode rainbow-identifiers-mode)
+  2412
+  '(nil nil)
   nil
   nil
   '((buffer-file-coding-system . undecided-unix)))
 
 (desktop-create-buffer 206
-  "/home/anthony/.emacs.d/user-init/user-functions-init.el"
-  "user-functions-init.el"
+  "/home/anthony/.emacs.d/user-init/user_dired.el"
+  "user_dired.el"
   'emacs-lisp-mode
-  '(autopair-mode yas-minor-mode projectile-mode linum-mode auto-complete-mode aggressive-indent-mode rainbow-identifiers-mode)
-  3614
-  '(3430 nil)
+  '(linum-mode autopair-mode auto-complete-mode yas-minor-mode projectile-mode aggressive-indent-mode rainbow-identifiers-mode)
+  691
+  '(771 nil)
   nil
   nil
-  '((buffer-file-coding-system . prefer-utf-8-unix)))
+  '((buffer-file-coding-system . utf-8-unix)))
 
 (desktop-create-buffer 206
-  "/home/anthony/.emacs.d/user-init/package-init.el"
-  "package-init.el"
+  "/home/anthony/.emacs.d/user-init/user-init.el"
+  "user-init.el"
   'emacs-lisp-mode
-  '(autopair-mode yas-minor-mode projectile-mode linum-mode auto-complete-mode aggressive-indent-mode rainbow-identifiers-mode fixmee-mode button-lock-mode)
+  '(linum-mode autopair-mode auto-complete-mode yas-minor-mode projectile-mode aggressive-indent-mode rainbow-identifiers-mode)
+  1569
+  '(507 nil)
+  nil
+  nil
+  '((buffer-file-coding-system . undecided-unix)))
+
+(desktop-create-buffer 206
+  "/home/anthony/.emacs"
+  ".emacs"
+  'emacs-lisp-mode
+  '(linum-mode autopair-mode auto-complete-mode yas-minor-mode projectile-mode aggressive-indent-mode rainbow-identifiers-mode)
+  483
+  '(nil nil)
+  nil
+  nil
+  '((buffer-file-coding-system . undecided-unix)))
+
+(desktop-create-buffer 206
+  nil
+  "ac-comphist.dat"
+  'dired-mode
+  '(linum-mode yas-minor-mode projectile-mode)
   1
-  '(92 nil)
-  nil
-  nil
-  '((buffer-file-coding-system . prefer-utf-8-unix)))
+  '(nil nil)
+  t
+  '("/home/anthony/.emacs.d/ac-comphist.dat")
+  nil)
 
