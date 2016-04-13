@@ -7,7 +7,7 @@
 
 
 (require 'powerline)
-(powerline-default-theme)
+(powerline-vim-theme)
 
 
 
@@ -35,18 +35,11 @@
 
 ;;sr-speedbar code block
 (require 'sr-speedbar)
-(sr-speedbar-open)
-(with-current-buffer sr-speedbar-buffer-name
-  (setq window-size-fixed 'width))
-(custom-set-variables
- '(speedbar-show-unknown-files 1)
- '(sr-speedbar-refresh-turn-on)
- )
+					;(sr-speedbar-open)
 
-(projectile-global-mode)
-(unless (setq projectile-indexing-method 'native)
-  (setq projectile-indexing-method 'alien))
-(setq projectile-enable-caching t)
+
+(defalias 'sr 'sr-speedbar-toggle)
+
 
 (require 'smex )
 (global-set-key (kbd "M-x") 'smex)

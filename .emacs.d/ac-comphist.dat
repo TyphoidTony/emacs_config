@@ -1,4 +1,20 @@
-((("split-window-below" .
+((("powerline-nano-theme" .
+   [0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0])
+  ("powerline-vim-theme" .
+   [0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0])
+  ("powerline-center-theme" .
+   [0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0])
+  ("sr-speedbar" .
+   [0 0 0 0 0 0 0 0 0 0 1])
+  ("sr-speedbar-refresh-turn-on" .
+   [0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("things" .
+   [1 0 0 0 0 0])
+  ("file" .
+   [1 0 0 0])
+  ("smex" .
+   [1 0 0 0])
+  ("split-window-below" .
    [2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
   ("my-shell" .
    [1 0 0 0 0 0 0 0])
@@ -7,9 +23,9 @@
   ("eshell" .
    [1 0 0 0 0 0])
   ("fixmee-mode" .
-   [1 0 0 0 0 0 0 0 0 0 0])
+   [1 0 0 0 0 0 1 0 0 0 0])
   ("fixmee" .
-   [1 0 0 0 0 0])
+   [1 0 0 1 0 0])
   ("fixme" .
    [1 0 0 0 1])
   ("elisp" .
@@ -33,7 +49,7 @@
   ("toggle-window-dedicated" .
    [0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0])
   ("cmd" .
-   [1 0 0])
+   [2 0 0])
   ("my-shell-hook" .
    [2 0 0 0 0 0 0 0 0 0 0 0 0])
   ("shell-mode" .
@@ -55,7 +71,7 @@
   ("def" .
    [1 0 0])
   ("shell-command" .
-   [0 0 0 0 0 0 0 0 1 0 0 0 0])
+   [5 0 0 0 0 0 0 0 1 0 0 0 0])
   ("interactive" .
    [0 0 0 0 0 1 1 0 0 0 0])
   ("global-set-key" .
@@ -79,7 +95,7 @@
   ("defun" .
    [3 0 0 0 0])
   ("s" .
-   [1])
+   [2])
   ("shell" .
    [2 0 0 0 0])
   ("load" .
@@ -89,4 +105,16 @@
   ("windmove-down" .
    [1 0 0 0 0 0 0 0 0 0 0 0 0])
   ("ansi-term" .
-   [0 0 0 0 0 0 0 0 1])))
+   [0 0 0 0 0 0 0 0 1])
+  ("fset" .
+   [2 0 0 0])
+  ("set-register" .
+   [0 0 0 0 0 0 0 2 0 0 0 0])
+  ("defalias" .
+   [0 0 0 0 0 1 0 1])
+  ("c" .
+   [1])
+  ("nil" .
+   [3 0 0])
+  ("sr-speedbar-right-side" .
+   [0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0])))

@@ -146,3 +146,8 @@
   (windmove-down)
   (ansi-term "bash")
   )
+
+
+
+
+

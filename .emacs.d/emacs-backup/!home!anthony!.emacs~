@@ -7,14 +7,15 @@
 (add-hook 'emacs-startup-hook
 	  (lambda ()  
 
+	    (shell-command '"sh gruvbox_256palette.sh")
 
 
-
-	    ;;90% of my config are in these files
+	    ;;99% of my config are in these files
 	    (load "~/.emacs.d/user-init/user-functions-init")
 	    (load "~/.emacs.d/user-init/user-init")
 	    (load "~/.emacs.d/user-init/ido-init")
 	    (load "~/.emacs.d/user-init/package-init")
+
 	    )); end of startup hook 
 
 
@@ -35,12 +36,9 @@
  '(package-archives (quote (("gnu" . "http://elpa.gnu.org/packages/"))))
  '(pop-up-windows nil)
  '(rainbow-identifiers-face-count 6)
- '(speedbar-show-unknown-files 1)
- '(speedbar-update-flag t)
  '(speedbar-use-images nil)
- '(speedbar-verbosity-level 0)
  '(sr-speedbar-default-width 40)
- '(sr-speedbar-refresh-turn-on nil)
+ '(sr-speedbar-refresh-turn-on)
  '(sr-speedbar-right-side nil)
  '(tool-bar-mode nil))
 (custom-set-faces

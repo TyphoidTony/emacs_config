@@ -55,18 +55,20 @@
 
 
 
-
 (global-hl-line-mode)
 
 
 (fset 'yes-or-no-p 'y-or-n-p)
 
+(set-register ?. '(file ."~/.emacs.d/user-init/user-init.el")); new thing to take advantage of
+(set-register ?o '(file ."~/WorkSpace/quick-notes.org"))
+(defalias 'cmd 'shell-command); a NEW THING
 
 
 (setq visible-bell nil)
 
 
-(set-face-attribute 'default nil :font "Fira Mono 12")
+;(set-face-attribute 'default nil :font "Fira Mono 12")
 
 
 (show-paren-mode t)
@@ -76,9 +78,8 @@
 (setq auto-save-file-name-transforms '((".*""~/.emacs.d/emacs_auto-save")))
 
 
-;(set-frame-parameter (selected-frame) 'alpha '(89 89))
-
 (global-set-key (kbd "C-=") 'hs-toggle-hiding)
 (add-hook 'hs-minor-mode  'c-mode)
 
 (windmove-default-keybindings)
+

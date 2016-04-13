@@ -1,29 +1,29 @@
 
 ;; ----- smex-history -----
 (
- w3m-goto-url
- w3m
- lsp
- customize-apropos-groups
  kcb
- dired
+ sr
+ cmd
  customize-group
+ sr-speedbar-toggle
+ lsp
+ sr-speedbar-open
 )
 
 ;; ----- smex-data -----
 (
  (kill-buffer . 1)
- (kcb . 76)
- (lsp . 9)
+ (kcb . 161)
+ (lsp . 19)
  (org-table-insert-hline . 2)
- (shell . 10)
- (shell-command . 1)
+ (shell . 12)
+ (shell-command . 3)
  (org-date-from-calendar . 1)
  (org-time-stamp . 3)
  (isearch-delete-char . 3)
  (snutter . 5)
  (turn-on-fic-mode . 1)
- (customize-group . 3)
+ (customize-group . 8)
  (temp-buffer-resize-mode . 4)
  (my-shell . 9)
  (tog . 5)
@@ -39,4 +39,35 @@
  (customize-apropos-groups . 1)
  (w3m . 1)
  (w3m-goto-url . 1)
+ (small-term . 2)
+ (cmd . 8)
+ (recover-file . 2)
+ (jump-to-register . 1)
+ (server-start . 1)
+ (find-file . 1)
+ (remember . 3)
+ (global-ede-mode . 1)
+ (ede-new . 2)
+ (ede-speedbar . 2)
+ (ede-set . 1)
+ (ede-add-file . 1)
+ (ede . 1)
+ (remember-buffer . 1)
+ (speedbar-toggle-etags . 5)
+ (visit-tags-table . 3)
+ (list-tags . 1)
+ (tags-search . 1)
+ (select-tags-table . 1)
+ (eval-buffer . 1)
+ (ecb-activate . 4)
+ (ecb-minor-menu . 1)
+ (imenu . 5)
+ (rgrep . 1)
+ (bookmark-bmenu-list . 1)
+ (org-table-create . 3)
+ (org-table-insert-row . 1)
+ (sr-speedbar-open . 3)
+ (sr-speedbar-toggle . 4)
+ (srtog . 1)
+ (sr . 10)
 )

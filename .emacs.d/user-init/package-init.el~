@@ -1,0 +1,53 @@
+					;#####################; 
+					;##### Packages ######; 
+					;#####################;
+
+
+(require 'gruvbox-theme)
+
+
+(require 'powerline)
+(powerline-default-theme)
+
+
+
+(require 'autopair) 
+(autopair-global-mode)
+
+
+(require 'rfringe)
+
+
+(require 'auto-complete)
+(auto-complete-mode)
+(ac-config-default)  
+
+
+(global-set-key (kbd  "C-x C-;") 'iedit-mode)
+
+(require 'yasnippet)
+(yas-global-mode 1)
+
+(global-aggressive-indent-mode 1)
+
+;;for all those nice variable colors
+(add-hook 'prog-mode-hook 'rainbow-identifiers-mode)
+
+;;sr-speedbar code block
+(require 'sr-speedbar)
+					;(sr-speedbar-open)
+					;(sr-speedbar-refresh-turn-on)
+
+(defalias 'sr 'sr-speedbar-toggle)
+
+
+(require 'smex )
+(global-set-key (kbd "M-x") 'smex)
+
+(require 'fixmee)
+(fixmee-mode t)
+
+
+
+(add-hook 'term-mode-hook (lambda()
+			    (setq yas-dont-activate t)))
