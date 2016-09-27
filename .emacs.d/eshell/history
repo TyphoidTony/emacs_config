@@ -1,0 +1,10 @@
+clear
+ls
+cd Settings/
+ls
+cd emacs_config/
+ls
+git add .emacs.d/
+git add .emacs.d/ -A
+git commit -m "Updated only a few things still need to update readme to reflect past changes"
+git push 

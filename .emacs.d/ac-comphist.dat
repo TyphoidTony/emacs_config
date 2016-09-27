@@ -1,120 +1,110 @@
-((("powerline-nano-theme" .
-   [0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0])
-  ("powerline-vim-theme" .
-   [0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0])
-  ("powerline-center-theme" .
-   [0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0])
-  ("sr-speedbar" .
-   [0 0 0 0 0 0 0 0 0 0 1])
-  ("sr-speedbar-refresh-turn-on" .
-   [0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
-  ("things" .
-   [1 0 0 0 0 0])
-  ("file" .
+((("input-maps" .
+   [0 0 0 0 0 1 0 0 0 0])
+  ("map-to-input" .
+   [0 0 0 0 0 0 1 0 0 0 0 0])
+  (":string-key" .
+   [0 0 0 0 0 0 0 0 1 0 0])
+  ("string-key" .
+   [0 0 0 0 0 0 0 0 0 1])
+  ("read-line" .
+   [0 0 0 0 0 0 1 0 0])
+  ("setf" .
+   [2 0 0 0])
+  ("list-length" .
+   [0 0 0 0 0 0 0 0 1 0 0])
+  ("list-junk" .
+   [0 0 0 0 0 0 1 1 0])
+  ("defparameter" .
+   [0 0 0 0 0 0 1 0 0 0 0 0])
+  ("cadr" .
+   [2 0 0 0])
+  ("list" .
    [1 0 0 0])
-  ("smex" .
-   [1 0 0 0])
-  ("split-window-below" .
-   [2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
-  ("my-shell" .
-   [1 0 0 0 0 0 0 0])
-  ("call-interactively" .
-   [0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1])
-  ("eshell" .
-   [1 0 0 0 0 0])
-  ("fixmee-mode" .
-   [1 0 0 0 0 0 1 0 0 0 0])
-  ("fixmee" .
-   [1 0 0 1 0 0])
-  ("fixme" .
-   [1 0 0 0 1])
-  ("elisp" .
-   [0 0 0 0 1])
-  ("fic-mode" .
-   [3 0 0 1 1 1 0 0])
-  ("load-user-file" .
-   [1 0 0 0 0 0 0 0 0 0 0 0 0 0])
-  ("require" .
-   [6 0 0 0 0 0 0])
-  ("ace-window" .
-   [2 0 0 0 0 0 0 0 0 0])
-  ("java-mode" .
-   [1 0 0 0 0 0 0 0 0])
-  ("c-mode" .
-   [1 0 0 0 0 0])
-  ("hs-minor-mode" .
-   [0 0 0 0 0 0 1 0 0 0 0 0 1])
-  ("hs-toggle-hiding" .
-   [0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0])
-  ("toggle-window-dedicated" .
-   [0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0])
-  ("cmd" .
+  ("cdr" .
    [2 0 0])
-  ("my-shell-hook" .
-   [2 0 0 0 0 0 0 0 0 0 0 0 0])
-  ("shell-mode" .
-   [0 0 0 0 0 0 1 0 0 0])
-  ("add-hook" .
-   [3 0 0 0 0 0 0 0])
-  (".emacs" .
-   [1 0 0 0 0 0])
-  ("auto-save-file-name-transforms" .
-   [0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
-  ("quote" .
-   [1 0 0 0 0])
-  ("backup-directory-alist" .
-   [0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0])
-  ("d" .
-   [1])
-  ("delb" .
-   [0 0 1 0])
-  ("def" .
+  ("car" .
+   [3 0 0])
+  ("nil" .
+   [2 0 0])
+  ("chicken" .
+   [1 0 0 0 0 0 0])
+  ("cons" .
+   [3 0 0 0])
+  ("clear-input" .
+   [1 0 0 0 0 0 0 0 0 0 0])
+  ("expt" .
+   [1 0 0 0])
+  ("on" .
+   [1 0])
+  ("princ" .
+   [2 0 0 0 0])
+  ("foo" .
    [1 0 0])
-  ("shell-command" .
-   [5 0 0 0 0 0 0 0 1 0 0 0 0])
-  ("interactive" .
-   [0 0 0 0 0 1 1 0 0 0 0])
-  ("global-set-key" .
-   [0 0 0 0 0 0 0 0 0 0 3 0 0 2])
-  ("minibuffer-prompt" .
-   [1 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0])
-  ("minibuffer-window" .
-   [0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0])
-  ("minibuf" .
-   [0 0 0 0 1 0 0])
-  ("ibuffer" .
-   [0 0 0 1 0 0 0])
-  ("minibuffer" .
-   [1 0 0 0 0 0 0 0 0 0])
-  ("minibuffer-local-completion-map" .
-   [0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1])
-  ("minibuffer-complete-and-exit" .
-   [0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0])
-  ("org" .
-   [1 0 0])
+  ("eq" .
+   [1 0])
+  ("input" .
+   [3 0 0 0 0])
+  ("stupid" .
+   [5 0 0 0 0 0])
   ("defun" .
    [3 0 0 0 0])
-  ("s" .
-   [2])
-  ("shell" .
-   [2 0 0 0 0])
-  ("load" .
+  ("fun" .
+   [2 0 0])
+  ("require" .
+   [2 0 0 0 0 0 0])
+  ("defn" .
+   [0 0 0 1])
+  ("base" .
    [1 0 0 0])
-  ("golden-ratio" .
-   [0 0 0 1 0 0 0 0 0 0 0 0])
-  ("windmove-down" .
-   [1 0 0 0 0 0 0 0 0 0 0 0 0])
-  ("ansi-term" .
-   [0 0 0 0 0 0 0 0 1])
-  ("fset" .
-   [2 0 0 0])
-  ("set-register" .
-   [0 0 0 0 0 0 0 2 0 0 0 0])
-  ("defalias" .
-   [0 0 0 0 0 1 0 1])
-  ("c" .
-   [1])
-  ("nil" .
+  ("power" .
+   [1 0 0 0 0])
+  ("testing-list" .
+   [0 0 0 0 0 0 0 4 0 0 0 0])
+  ("inc" .
+   [2 0 1])
+  ("def" .
    [3 0 0])
-  ("sr-speedbar-right-side" .
-   [0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0])))
+  ("first-choice" .
+   [0 0 0 0 0 0 0 0 0 0 1 0])
+  ("second-choice" .
+   [1 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("unimportant-choices" .
+   [0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("chooser" .
+   [1 0 0 0 0 0 0])
+  ("faggot" .
+   [2 0 0 0 0 0])
+  (":lng" .
+   [1 0 0 0])
+  ("lat" .
+   [1 0 0])
+  ("announce-treasture-locations" .
+   [0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
+  (":lat" .
+   [1 0 0 0])
+  ("lng" .
+   [1 0 0])
+  ("vector-lists" .
+   [0 0 0 0 0 0 0 0 1 0 0 0])
+  ("crouton.html" .
+   [0 0 1 0 0 0 0 0 0 0 0 0])
+  ("fn?" .
+   [0 0 1])
+  ("fn" .
+   [3 0])
+  ("println" .
+   [1 0 0 0 1 0 0])
+  ("clojure.clj" .
+   [2 0 0 0 0 0 0 0 0 0 0])
+  ("String" .
+   [2 0 0 0 0 0])
+  ("print" .
+   [1 0 0 0 0])
+  ("s" .
+   [1])
+  ("list-ports" .
+   [1 0 0 0 0 0 0 0 0 0])
+  ("System" .
+   [1 0 0 0 0 0])
+  ("System/setProperty" .
+   [0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1])))

@@ -1,0 +1,73 @@
+
+
+clicker(){
+    
+    rand=$(shuf -i  57-100 -n 1);
+
+    x="$1";
+    y="$2";
+
+    echo $rand;
+
+    wurm=$(xdotool search "wurm" windowactivate --sync );
+
+    xdotool key --clearmodifiers  mousemove $x $y;##use xdotool getmouselocation to get the loction of the "continue" Button 
+
+    xdotool key --clearmodifiers  click 1;
+
+    sleep $rand;
+
+}
+
+presskey(){
+
+    key=$k;#put key you want pressed three times here.
+
+    rand=$(shuf -i 59-89  -n 1);
+
+    echo $rand;
+
+    wurm=$(xdotool search --onlyvisible --class wurm | head -1);
+
+    xdotool key --clearmodifiers -window $wurm $key;
+    sleep 0.5;
+    
+    xdotool key --clearmodifiers -window $wurm $key;
+    sleep 1;
+
+    xdotool key --clearmodifiers -window $wurm $key;
+    sleep 0.7;
+
+    sleep $rand;
+}
+
+while true;
+do 
+    echo "Do you want a clicker(1) or a key(2) presser?"
+    read input
+    if [input == 1]
+    then 
+	echo "What x position do you want the mouse to click?"
+	read xpos
+
+	echo "What y position do you want the mouse to click?"
+	read ypos
+
+	clicker $xpos $ypos
+    fi
+
+    if [input == 2]
+    then 
+	presskey
+    fi
+
+    if [input != 1] && [input !=2]
+    then 
+	false
+    fi
+
+    echo "Enter key combo you want to press e.g. ctrl+c";
+    read keyPress;
+    presskey $keyPress
+
+done

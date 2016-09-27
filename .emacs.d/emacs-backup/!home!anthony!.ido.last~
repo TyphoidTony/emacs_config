@@ -2,74 +2,118 @@
 
 ;; ----- ido-last-directory-list -----
 (
- ("/home/anthony/Downloads/rfstompbox-0.5/" . "firmware/")
- ("/home/anthony/Downloads/" . "rfstompbox-0.5/")
- ("/home/anthony/WorkSpace/Projects/7_segment_display/Suto_dis/" . "src/")
+ ("/home/anthony/WorkSpace/lisp/clojure/" . "clojure-noob/")
+ ("/home/anthony/WorkSpace/lisp/" . "clojure/")
+ ("/home/anthony/WorkSpace/lisp/clojure/clojure-noob/src/" . "clojure_noob/")
+ ("/home/anthony/WorkSpace/lisp/clojure/clojure-noob/" . "src/")
+ ("/home/anthony/WorkSpace/AVR-Programming-master/Chapter06_Digital-Input/" . "bossButton/")
  ("/home/anthony/WorkSpace/Projects/7_segment_display/" . "Suto_dis/")
  ("/home/anthony/WorkSpace/Projects/" . "7_segment_display/")
+ ("/home/anthony/WorkSpace/AVR-Programming-master/Chapter05_Serial-IO/" . "serialLoopback/")
+ ("/home/anthony/WorkSpace/AVR-Programming-master/Chapter04_Bit-Twiddling/" . "cylonEyes/")
  ("/home/anthony/WorkSpace/AVR-Programming-master/" . "AVR-Programming-Library/")
- ("/home/anthony/WorkSpace/" . "Projects/")
  ("/home/anthony/.emacs.d/" . "user-init/")
- ("/home/anthony/" . ".emacs.d/")
+ ("/home/anthony/" . "WorkSpace/")
+ ("/home/anthony/WorkSpace/" . "lisp/")
+ ("/home/anthony/WorkSpace/Projects/7_segment_display/Suto_dis/" . "src/")
 )
 
 ;; ----- ido-work-directory-list -----
 (
+ "/home/anthony/WorkSpace/lisp/clojure/clojure-noob/"
  "/home/anthony/.emacs.d/user-init/"
  "/home/anthony/"
- "/home/anthony/WorkSpace/"
- "/home/anthony/Downloads/rfstompbox-0.5/firmware/"
+ "/home/"
+ "/home/anthony/WorkSpace/lisp/clojure/clojure-noob/src/clojure_noob/"
+ "/home/anthony/WorkSpace/lisp/clojure/clojure-noob/src/app/"
  "/home/anthony/WorkSpace/Projects/7_segment_display/Suto_dis/src/"
- "/home/anthony/WorkSpace/Projects/7_segment_display/AVR-Programming-Library/"
+ "/home/anthony/WorkSpace/lisp/"
+ "/home/anthony/.config/"
+ "/home/anthony/WorkSpace/wurm_scripts/"
+ "/home/anthony/WorkSpace/AVR-Programming-master/Chapter06_Digital-Input/bossButton/"
+ "/home/anthony/WorkSpace/AVR-Programming-master/AVR-Programming-Library/"
+ "/home/anthony/WorkSpace/AVR-Programming-Library/"
+ "/home/anthony/WorkSpace/Projects/AVR_button/"
+ "/home/anthony/WorkSpace/AVR-Programming-master/Chapter05_Serial-IO/serialLoopback/"
+ "/home/anthony/WorkSpace/AVR-Programming-master/Chapter06_Digital-Input/toggleButton_debounced/"
+ "/home/anthony/WorkSpace/AVR-Programming-master/Chapter04_Bit-Twiddling/cylonEyes/"
+ "/home/anthony/WorkSpace/"
+ "/home/anthony/WorkSpace/Projects/7_segment_display/Suto_dis/AVR-Programming-Library/"
 )
 
 ;; ----- ido-work-file-list -----
 (
- "package-init.el"
- ".bashrc"
- ".emacs"
- "quick-notes.org"
- "user-init.el"
- "overView.yaml"
- "learning.org"
- "osccal.c"
+ "project.clj"
+ "user-packages.el"
+ "db.txt"
+ "html.clj"
+ "core.clj"
+ "clojure-class.clj"
  "main.c"
- "ido-init.el"
+ "test.fasl"
+ "user-functions.el"
+ "test.lisp"
 )
 
 ;; ----- ido-dir-file-cache -----
 (
- ("/home/anthony/.emacs.d/user-init/" (22286 27673 737755 790000) "./" "user-functions-init.el" "../" "user-init.el" "package-init.el~" "#package-init.el#" "projectile-init.el" "user-init.el~" "package-init.el" "ido-init.el" ".directory")
+ ("/home/anthony/WorkSpace/lisp/clojure/clojure-noob/" (22494 3046 831277 949000) "./" "CHANGELOG.md" "resources/" ".hgignore" "target/" "project.clj" ".lein-repl-history" "src/" "../" "LICENSE" "doc/" ".gitignore" "test/" "README.md")
 
- ("/home/anthony/" (22286 27320 281755 142000) ".pki/" "./" ".bash_history" ".local/" "Downloads/" ".recently-used" ".bash_logout" "Templates/" ".gnome2/" ".Skype/" ".notes" "../" ".emacs.d/" ".IdeaIC2016.1/" ".emacs" ".xsession-errors" ".mono/" "Desktop/" "Documents/" ".bashrc" "Steam/" ".hplip/" ".gconf/" ".cache/" "WorkSpace/" ".xscreensaver" ".dbus/" "Music/" ".purple/" ".AMD/" ".mozilla/" ".bashrc~" ".ido.last~" ".dmrc" ".gitconfig" ".fonts.conf" "Public/" ".fonts/" ".xsession-errors.old" ".pulse-cookie" ".gnome/" ".macromedia/" ".adobe/" ".Xauthority" ".steampath" ".oracle_jre_usage/" ".steam/" "SpiderOak Hive/" "Videos/" ".profile" ".paradoxinteractive/" ".gksu.lock" ".emacs~" ".thumbnails/" ".face" ".gstreamer-0.10/" ".ssh/" ".ICEauthority" ".config/" ".xsel.log" ".gtkrc-2.0" "Pictures/" ".steampid" ".gnome2_private/" ".huntedcowcache/" ".wine/" ".python-eggs/" ".Xdefaults" ".thunderbird/" ".ido.last" ".java/")
+ ("/home/anthony/.config/" (22473 46514 269218 632000) "gtk-2.0/" "yelp/" "hexchat/" "Mousepad/" "./" "metacity/" "Skype/" "cef_user_data/" "VirtualBox/" "upstart/" "synapse/" "autostart/" "mimeapps.list" "unity3d/" "Thunar/" ".mono/" "SpiderOakONE/" "qpdfview/" "pavucontrol.ini" "ristretto/" "dconf/" "xfce4/" "linuxmint/" "user-dirs.locale" "caja/" "KeePass/" "xfburn/" "discord/" "tomboy/" "pulse/" "vlc/" "compton.conf" "audacious/" "compiz-1/" "menus/" "ibus/" "htop/" "cinnamon-session/" "transmission/" "libreoffice/" "google-chrome/" "keepassx/" "spotify/" "smplayer/" "chromium/" "catfish/" "../" "totem/" "enchant/" "user-dirs.dirs" "gtk-3.0/" "Trolltech.conf" "Zeal/" "numix-folders" "nemo/")
 
- ("/home/anthony/WorkSpace/" (22286 23969 289748 994000) "./" "SmartDuck/" "OtherPeoplesCode/" "rfstompbox-0.5/" "../" "libpololu-avr/" "learning.org" "test.class" "Projects/" "C_Learning_and_ucontrollers/" "learnBash.sh" "test.java" "memorybook.pdf" "Settings/" "AVR-Programming-master/" "ASoto_Resume.pdf" "Things I've made/" "quick-notes.org" "learnBash.sh~")
+ ("/home/anthony/.emacs.d/user-init/" (22468 10573 960840 962000) "user-CEDET.el" "./" ".directory" "user-functions.el" "user-packages.el" "user-defalias.el" "user-ido.el" "../" "user-init.el")
 
- ("/home/anthony/.emacs.d/" (22281 59354 318112 643000) "./" "../" "session.10706300000145831167000000015360058" "ido.last~" "emacs-backup/" "snippets/" "auto-save-list/" "ido.last" "elpa/" "smex-items" "var/" ".emacs.desktop" "ac-comphist.dat" "projectile-bookmarks.eld" "user-init/" "ede-projects.el" ".directory" ".emacs.desktop.lock")
+ ("/home/anthony/WorkSpace/lisp/clojure/clojure-noob/src/clojure_noob/" (22472 20153 741221 354000) "./" "core.clj" "clojure-class.clj" "../" "html.clj")
 
- ("/home/anthony/WorkSpace/Projects/7_segment_display/AVR-Programming-Library/" (22269 33984 786330 433000) "./" "binaryMacro.h" "USART.c" "../" "portpins.h" "pinDefines.h" "macros.h" "README.md" "Makefile" "USART.o" "USART.h" ".gitignore")
+ ("/home/anthony/" (22473 38915 141388 879000) ".recently-used" ".IdeaIC2016.1/" ".TeamSpeak3-Client-linux_amd64/" ".kde/" ".profile" ".thumbnails/" "./" ".Opsu/" ".bash_history" ".xfce4-session.verbose-log.last" ".gtktermrc" ".mplayer/" "Documents/" ".icons/" ".thunderbird/" ".lein/" ".opsu.cfg" ".steampath" ".gstreamer-0.10/" "Desktop/" "Templates/" ".oracle_jre_usage/" ".gvfs/" ".mono/" ".adobe/" ".paradoxinteractive/" ".bluetooth_enable.sh" ".kchmviewer/" ".slingshot/" "Pictures/" "Downloads/" ".Xauthority" ".AMD/" ".ICEauthority" ".pki/" ".linuxmint/" ".opsu.log" ".ido.last" ".clojure_history" ".mbwarband/" ".com.wurmonline.client.launcherfx.WurmMain/" ".Skype/" ".prefs/" ".emacs" ".dmrc" ".face" ".pulse-cookie" ".sbclrc" ".gimp-2.8/" ".slime-history.eld" ".gnupg/" ".emacs.before_ecb_2.40" ".emacs.d/" ".m2/" ".factorio/" ".gconf/" "SpiderOak Hive/" "Videos/" ".hplip/" ".java/" ".local/" ".gnome2/" ".xsession-errors" ".bash_logout" ".themes/" "Steam/" ".aptitude/" ".gtkrc-2.0" "Music/" ".t-engine/" ".opsu_scores.db" ".gtkrc-xfce" "Public/" ".gnome/" "../" ".wurm/" "WorkSpace/" ".steampid" ".android/" ".gnome2_private/" ".quicklisp/" ".gksu.lock" ".ts3client/" ".mozilla/" ".Idea/" ".slime/" ".cache/" ".compiz/" ".macromedia/" ".xfce4-session.verbose-log" ".xinputrc" ".config/" ".dbus/" ".steam/" ".ssh/" ".opsu.db" ".python-eggs/" ".xscreensaver")
 
- ("/home/anthony/Downloads/rfstompbox-0.5/firmware/" (22270 33909 310463 238000) "./" "usbconfig.h" "../" "osccal.h" "main.c" "checksize" "usbdrv/" "osccal.c" "Makefile")
+ ("/home/anthony/WorkSpace/" (22458 4479 96971 922000) "learnBash.sh~" "./" "AVR-Programming-Library/" "SmartDuck/" "learning.org" "lisp/" "rfstompbox-0.5/" "Main.java" "test.java" "learnBash.sh" "OtherPeoplesCode/" "AVR-Programming-master/" "Projects/" "Things I've made/" "wurm_scripts/" "Link to WorkSpace/" "memorybook.pdf" "quick-notes.org" "Humble_Bundle_joy_of_programming/" "test.class" "Settings/" "libpololu-avr/" "Main.class" "ASoto_Resume.pdf" "rosie-the-cat/" "../" "C_Learning_and_ucontrollers/" "something.txt")
 
- ("/home/anthony/Downloads/rfstompbox-0.5/" (22270 33909 306463 238000) "./" "circuit/" "firmware/" "../" "ChangeLog" "README" "COPYING" "Makefile")
+ ("/home/anthony/WorkSpace/lisp/clojure/" (22457 61988 976912 359000) "./" "clojure-noob/" "../")
 
- ("/home/anthony/Downloads/" (22270 33909 306463 238000) "./" "rfstompbox-0.5/" "../")
+ ("/home/anthony/WorkSpace/lisp/" (22457 59616 152894 751000) "./" "clojure/" "test.fasl" "#test.lisp#" "test.lisp" "hello_world.lisp" "../")
 
- ("/home/anthony/WorkSpace/Projects/7_segment_display/Suto_dis/src/" (22269 32807 610318 60000) "./" "TAGS" ".git/" "../" "display.h" "src.elf" "main.o" "display.c" "display.c~" "main.c" "README.md" "src.map" "display.o" "Makefile" "src.hex")
+ ("/home/anthony/.emacs.d/" (22457 46844 616799 973000) "eshell/" "session.2258730eb-6a56-44f4-90df-635bf5f9300a" "user-init/" "./" "ido.last~" "session.2a95533c7-e92c-4f3a-9227-13f096d951c8" ".directory" "session.2c254d88a-48ba-4867-8f67-5cce88aa6f13" "session.27b013773-06cc-419f-8161-e5191a352e59" "session.2e776b967-d319-4c00-a4d3-5290054b7abf" "session.2446cfe35-cdf5-4ed5-8beb-872f3e39cb03" "session.10b52eaf6be83d9b8146384650478334200000026300042" "session.2419fb664-63c3-44e9-8e09-aaca47216a8b" "session.24154cca1-52e4-4f96-8be3-f6fc4d70b381" ".gruv_terminal/" "session.2d85dbf42-e03d-407d-82b3-f6cdc0479027" "session.23609e5a6-41bd-4f3b-94b0-18198a4811f2" "session.2f1ac6dd2-0a3a-4392-af46-b1ad2860b5da" "semanticdb/" "session.108482e003fbb0fcb1146412732036270200000022750037" "ede-projects.el" "smex-items" "session.2a1943a42-9151-4e3b-bfda-cff7511cf997" "session.2232513d6-6d65-4295-b75c-0ffd1bc942d9" "emacs-backup/" "session.2cefc45ba-97ec-483a-9199-b2f2a0c2db2c" "session.2b4d66e0f-1775-4a42-8078-3ec42c6e594f" ".emacs.desktop" "session.21ff70f35-8fc5-4191-85a9-9073034f2707" "session.10fe75cc6e465bd0a2146435779213731100000022760038" "session.29904aeba-c3bc-4f61-a687-4d32b391a2cb" "session.1019720b421058a951146376581786274400000022730041" "session.10ab91fa84891ac34f146368044385170200000074850038" "session.10759123ca7ba747ef146840877963064700000102150041" "ac-comphist.dat" "session.2839b6c67-e14c-412f-b706-21f5d222e3ec" "session.2b5daf216-98df-4298-812b-ca2c9b387548" "session.2602871a5-b9a6-49e6-a4ab-886caab266c5" "session.28cbca3b3-3ef8-49fe-9c9e-25dd1c04599b" "session.22797347b-0d7c-4534-8d57-a061b7b4f83a" "session.2ec800122-c842-4abf-963f-6643d01932ff" "session.2a653dba4-b3c6-4537-8bbd-3240e7150da1" "session.10b455223a930a7006146378321113111500000133950037" "session.269d178ad-87fc-48b3-8298-63ec4c064efb" "session.2587050a7-f21f-4ca2-9b7c-cf297bb4a73b" "var/" "../" ".emacs.desktop.lock" "session.102e78d77e2c5469bd146430777242221800000051980039" "session.23bc3372f-22d4-49dd-846c-21bc06161bd4" "projectile-bookmarks.eld" "session.2bf5741be-3970-4e7f-9714-510b054b8168" "auto-save-list/" "session.217400988-673f-438b-9785-a2a71335ea7e" "session.10706300000145831167000000015360058" "ido.last" "session.252f6c44c-bf05-47f3-889a-79af477fe849" "session.24ccae698-3537-4a98-87a2-d27ada361fac" "session.28501c87a-2f7a-4b7b-99b9-6c102df37c6c" "snippets/" "elpa/")
 
- ("/home/anthony/WorkSpace/Projects/7_segment_display/Suto_dis/" (22265 63168 318473 143000) "./" "4_digit_7_segment_display_wire_layout.txt" "../" "AVR-Programming-Library/" "src/" "4_pin_7_segement_display_layout.png")
+ ("/home/anthony/WorkSpace/lisp/clojure/clojure-noob/src/" (22457 61988 980912 359000) "./" "clojure_noob/" "../")
 
- ("/home/anthony/WorkSpace/Projects/7_segment_display/" (22265 63168 290473 143000) "./" "../" "AVR-Programming-Library/" "AVR_pin_Picutres/" "Suto_dis/")
+ ("/home/anthony/WorkSpace/lisp/clojure/clojure-noob/src/app/" (22457 60946 544904 623000) "./" "core.clj" "../")
 
- ("/home/anthony/WorkSpace/Projects/" (22265 63291 794475 708000) "Java/" "./" "SutoSimon/" "../" "SutoCard/" "7_segment_display/" "cpp/" "Suto_Calc/" "Suto_TicTacToe/")
+ ("/home/" (22354 8596 998931 318000) "./" "anthony/" "../")
 
- ("/home/" (22265 54436 232917 890000) "./" "anthony/" "../")
+ ("/home/anthony/WorkSpace/Projects/7_segment_display/Suto_dis/src/" (22454 13498 236904 509000) "main.c" "./" ".git/" "display.h" "display.c~" "main.o" "Makefile" "display.o" "TAGS" "src.map" "display.c" "../" "src.hex" "README.md" "src.elf")
 
- ("/home/anthony/WorkSpace/AVR-Programming-master/AVR-Programming-Library/" (22265 61401 258436 432000) "./" "binaryMacro.h" "USART.c" "../" "portpins.h" "pinDefines.h" "macros.h" "README.md" "Makefile" "USART.o" "USART.h" ".gitignore")
+ ("/home/anthony/WorkSpace/AVR-Programming-master/Chapter06_Digital-Input/bossButton/" (22424 49027 749042 633000) "./" "bossButton.c" "Makefile" "bossButton.elf" "bossButton.hex" "bossButton.py" "bossButton.o" "../" "bossButton.map")
 
- ("/home/anthony/WorkSpace/AVR-Programming-master/" (22265 61494 206438 363000) "./" "Chapter05_Serial-IO/" "allProjectsList" "Chapter11_Driving-Servo-Motors/" "Chapter17_I2C/" "../" "Chapter07_Analog-to-Digital-Conversion-I/" "AVR-Programming-Library/" "Chapter15_Advanced-Motors/" "Chapter03_Digital-Output/" "Chapter19_EEPROM/" "Chapter06_Digital-Input/" "Chapter02_Programming-AVRs/" "Chapter09_Introduction-to-Timer-Counter-Hardware/" "README.md" "Chapter16_SPI/" "Chapter14_Switches/" "avr8-gnu-toolchain/" "setupProject/" "Chapter12_Analog-to-Digital-Conversion-II/" "Chapter08_Hardware-Interrupts/" "Chapter04_Bit-Twiddling/" "Chapter18_Using-Flash-Program-Memory/" "avrdude_utilities/" "Chapter10_Pulse-Width-Modulation/" "Chapter13_Advanced-PWM-Tricks/")
+ ("/home/anthony/WorkSpace/Projects/AVR_button/" (22421 2331 691880 717000) "USART.c" "AVR_button.elf" "main.c" "./" "main.o" "Makefile" "macros.h" "AVR_button.hex" "USART.h" "../" "AVR_button.map" "main.h" "avr_serial.py" "USART.o")
 
- ("/home/anthony/Desktop/" (22266 48314 588327 765000) "./" "../")
+ ("/home/anthony/WorkSpace/AVR-Programming-Library/" (22354 13014 313834 81000) "USART.c" "./" "pinDefines.h" "binaryMacro.h" "Makefile" "macros.h" "USART.h" "portpins.h" "../" ".gitignore" "USART.o" "README.md")
+
+ ("/home/anthony/WorkSpace/AVR-Programming-master/AVR-Programming-Library/" (22354 13014 313834 81000) "USART.c" "./" "pinDefines.h" "binaryMacro.h" "Makefile" "macros.h" "USART.h" "portpins.h" "../" ".gitignore" "USART.o" "README.md")
+
+ ("/home/anthony/WorkSpace/AVR-Programming-master/Chapter05_Serial-IO/serialLoopback/" (22400 65137 156135 824000) "serialLoopback.o" "./" "serialLoopback.c" "serialLoopback.map" "Makefile" "../" "serialLoopback.hex" "serialLoopback.elf")
+
+ ("/home/anthony/WorkSpace/Projects/" (22419 37513 765903 114000) "AVR_button/" "./" "Java/" "7_segment_display/" "SutoCard/" "cpp/" "DD_GUI_Wrapper/" "Suto_Calc/" "SutoSimon/" "Suto_TicTacToe/" "../")
+
+ ("/home/anthony/WorkSpace/AVR-Programming-master/Chapter05_Serial-IO/" (22354 13014 509834 82000) "./" "serialOrgan/" "serialLoopback/" "../")
+
+ ("/home/anthony/WorkSpace/AVR-Programming-master/Chapter06_Digital-Input/toggleButton_debounced/" (22399 1245 376648 892000) "./" "Makefile" "toggleButton_debounced.c" "../")
+
+ ("/home/anthony/WorkSpace/AVR-Programming-master/Chapter06_Digital-Input/" (22354 13013 341834 74000) "simpleButton/" "./" "toggleButton_debounced/" "debouncer/" "toggleButton/" "avrMusicBox/" "bossButton/" "../")
+
+ ("/home/anthony/WorkSpace/AVR-Programming-master/Chapter04_Bit-Twiddling/cylonEyes/" (22354 13013 513834 75000) "./" "cylonEyes.c~" ".tags" "Makefile" "cylonEyes.map" ".tags_sorted_by_file" "cylonEyes.elf" "cylonEyes.hex" "cylonEyes.o" "../" "cylonEyes.c")
+
+ ("/home/anthony/WorkSpace/AVR-Programming-master/Chapter04_Bit-Twiddling/" (22354 13013 489834 75000) "./" "showingOffBits/" "cylonEyes_8LFSR/" "cylonEyes/" "cylonEyes_naive/" "cylonEyes_halfStepping/" "../" "cylonEyes_counting/" "cylonEyes_quasiRandomToggle/" "cylonEyes_16LFSR/")
+
+ ("/home/anthony/WorkSpace/AVR-Programming-master/" (22354 13014 573834 83000) "avr8-gnu-toolchain/" "./" "Chapter16_SPI/" "AVR-Programming-Library/" "Chapter18_Using-Flash-Program-Memory/" "Chapter11_Driving-Servo-Motors/" "Chapter12_Analog-to-Digital-Conversion-II/" "allProjectsList" "Chapter06_Digital-Input/" "Chapter17_I2C/" "Chapter03_Digital-Output/" "Chapter08_Hardware-Interrupts/" "Chapter05_Serial-IO/" "Chapter10_Pulse-Width-Modulation/" "Chapter09_Introduction-to-Timer-Counter-Hardware/" "Chapter04_Bit-Twiddling/" "Chapter19_EEPROM/" "Chapter02_Programming-AVRs/" "avrdude_utilities/" "Chapter07_Analog-to-Digital-Conversion-I/" "../" "Chapter14_Switches/" "Chapter15_Advanced-Motors/" "setupProject/" "Chapter13_Advanced-PWM-Tricks/" "README.md")
+
+ ("/home/anthony/WorkSpace/wurm_scripts/" (22376 13722 654923 225000) "./" ".git/" "test.txt" "wurm_mouse_clicker.sh" "#wurm_press_key.sh#" "test.sh" "dmesg.txt" "text.txt" "auto.sh" "wurm_press_key.sh" "../" "README.md")
+
+ ("/home/anthony/WorkSpace/Projects/7_segment_display/" (22354 13003 41833 997000) "./" "AVR-Programming-Library/" "Suto_dis/" "AVR_pin_Picutres/" "../")
+
+ ("/home/anthony/WorkSpace/Projects/7_segment_display/Suto_dis/AVR-Programming-Library/" (22354 13002 917833 996000) "USART.c" "./" "pinDefines.h" "binaryMacro.h" "Makefile" "macros.h" "USART.h" "portpins.h" "../" ".gitignore" "USART.o" "README.md")
+
+ ("/home/anthony/WorkSpace/Projects/7_segment_display/Suto_dis/" (22354 13002 841833 996000) "./" "4_pin_7_segement_display_layout.png" "AVR-Programming-Library/" "4_digit_7_segment_display_wire_layout.txt" "src/" "../")
 )
 
 ;; ----- ido-unc-hosts-cache -----

@@ -1,0 +1,33 @@
+
+test(){
+
+    #    key="$1"
+    #   win="$2"
+    #    imp="$1"
+    #    xdotool search "$1"  windowactivate # this works
+    #    xdotool key --clearmodifiers  $key
+    x=1017
+    y=1416
+    xdotool  mousemove $x $y click 1
+
+    
+    #    xvkbd -text  "hello world"
+    
+}
+
+
+
+
+#echo "what window are you looking for?"
+#read w
+#echo "what key do you want to press?"
+#read k
+
+#win=$(xdotool search --onlyvisible --class Mozilla | head -1)
+
+#xdotool key --clearmodifiers --window $win ctrl+n
+
+
+test 
+
+

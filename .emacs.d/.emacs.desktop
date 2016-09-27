@@ -2,7 +2,7 @@
 ;; --------------------------------------------------------------------------
 ;; Desktop File for Emacs
 ;; --------------------------------------------------------------------------
-;; Created Wed Apr 13 11:57:38 2016
+;; Created Mon Sep 26 13:25:47 2016
 ;; Desktop file format version 206
 ;; Emacs version 24.3.1
 
@@ -10,64 +10,42 @@
 (setq desktop-missing-file-warning nil)
 (setq tags-file-name "/home/anthony/WorkSpace/Projects/7_segment_display/Suto_dis/src/TAGS")
 (setq tags-table-list '("/home/anthony/WorkSpace/Projects/7_segment_display/Suto_dis/src/TAGS"))
-(setq search-ring '("font" "re" "auto" "images" "sr-" "fira" "font" "fira" "remember" "projectile" "pro" "smex" "projectile" "ecb" "sp" "ede"))
+(setq search-ring '("ac-cider" "yas" "clojure" "ac-slime" "rainbow" "lisp" "parenthese" "paren" "para" "ac-slime" "lisp" "slime" "lisp" "tip" "star" "ecb"))
 (setq regexp-search-ring nil)
-(setq register-alist (list '(46 file . "~/.emacs.d/user-init/user-init.el") '(111 file . "~/WorkSpace/quick-notes.org") (list 82 "Unprintable entity" (let ((mk (make-marker))) (add-hook 'desktop-delay-hook (list 'lambda '() (list 'set-marker mk nil (get-buffer " *temp*")))) mk)) '(102 file . "~/.emacs.d/user-init/user-functions-init.el")))
-(setq file-name-history '("/home/anthony/.emacs.d/user-init/package-init.el" "/home/anthony/.bashrc" "/home/anthony/.emacs" "/home/anthony/.emacs.d/user-init/package-init.el" "~/.emacs.d/user-init/user-init.el" "~/.emacs" "/home/anthony/WorkSpace/quick-notes.org" "/home/anthony/.emacs.d/user-init/package-init.el" "/home/anthony/.emacs" "/home/anthony/.emacs.d/user-init/package-init.el" "/home/anthony/.emacs" "/home/anthony/.emacs.d/user-init/user-init.el" "/home/anthony/.emacs.d/user-init/package-init.el" "~/.emacs.d/user-init/user-init.el" "~/.emacs" "/home/anthony/overView.yaml" "/home/anthony/.emacs.d/user-init/user-init.el" "/home/anthony/.emacs" "/home/anthony/WorkSpace/quick-notes.org" "/home/anthony/WorkSpace/learning.org" "/home/anthony/.emacs" "/home/anthony/Downloads/rfstompbox-0.5/firmware/osccal.c" "/home/anthony/Downloads/rfstompbox-0.5/firmware/main.c" "/home/anthony/.emacs.d/user-init/package-init.el" "/home/anthony/.emacs.d/user-init/ido-init.el" "/home/anthony/.emacs.d/user-init/user-functions-init.el" "/home/anthony/.emacs.d/user-init/projectile-init.el" "/home/anthony/WorkSpace/Projects/7_segment_display/Suto_dis/src/display.c" "/home/anthony/.emacs.d/user-init/package-init.el" "~/.emacs.d/user-init/ido-init.el"))
+(setq register-alist (list '(105 file . "~/.emacs.d/user-init/user-init.el") '(46 file . "~/.emacs.d/user-init/user-init.el") '(111 file . "~/WorkSpace/quick-notes.org") (list 82 "Unprintable entity" (let ((mk (make-marker))) (add-hook 'desktop-delay-hook (list 'lambda '() (list 'set-marker mk nil (get-buffer " *temp*")))) mk)) '(102 file . "~/.emacs.d/user-init/user-functions-init.el")))
+(setq file-name-history '("/home/anthony/WorkSpace/lisp/clojure/clojure-noob/project.clj" "/home/anthony/.emacs.d/user-init/user-packages.el" "/home/anthony/db.txt" "/home/db.txt" "/home/anthony/WorkSpace/lisp/clojure/clojure-noob/src/clojure_noob/html.clj" "/home/anthony/WorkSpace/lisp/clojure/clojure-noob/project.clj" "/home/anthony/WorkSpace/lisp/clojure/clojure-noob/src/clojure_noob/html.clj" "/home/anthony/WorkSpace/lisp/clojure/clojure-noob/project.clj" "/home/anthony/.emacs.d/user-init/user-packages.el" "/home/anthony/WorkSpace/lisp/clojure/clojure-noob/src/clojure_noob/core.clj" "/home/anthony/WorkSpace/lisp/clojure/clojure-noob/src/clojure_noob/clojure-class.clj" "/home/anthony/.emacs.d/user-init/user-packages.el" "/home/anthony/WorkSpace/lisp/clojure/clojure-noob/src/clojure_noob/core.clj" "/home/anthony/.emacs.d/user-init/user-packages.el" "/home/anthony/WorkSpace/lisp/clojure/clojure-noob/src/clojure_noob/core.clj" "/home/anthony/WorkSpace/lisp/clojure/clojure-noob/project.clj" "/home/anthony/WorkSpace/lisp/clojure/clojure-noob/src/app/core.clj" "/home/anthony/WorkSpace/lisp/clojure/clojure-noob/project.clj" "/home/anthony/.emacs.d/user-init/user-packages.el" "/home/anthony/WorkSpace/Projects/7_segment_display/Suto_dis/src/main.c" "/home/anthony/WorkSpace/lisp/test.fasl" "/home/anthony/.emacs.d/user-init/user-functions.el" "/home/anthony/WorkSpace/lisp/test.lisp" "/home/anthony/.emacs.d/user-init/user-packages.el" "/home/anthony/WorkSpace/lisp/hello_world.lisp" "/home/anthony/.emacs.d/user-init/user-packages.el" "/home/anthony/WorkSpace/lisp/hello_world.lisp" "/home/anthony/.emacs.d/user-init/user-packages.el" "/home/anthony/.emacs" "/home/anthony/WorkSpace/lisp/test.lisp"))
 
 ;; Buffer section -- buffers listed in same order as in buffer list:
 (desktop-create-buffer 206
-  "/home/anthony/.emacs.d/user-init/package-init.el"
-  "package-init.el"
-  'emacs-lisp-mode
-  '(linum-mode autopair-mode yas-minor-mode auto-complete-mode aggressive-indent-mode rainbow-identifiers-mode fixmee-mode button-lock-mode)
-  189
+  "/home/anthony/WorkSpace/lisp/clojure/clojure-noob/project.clj"
+  "project.clj"
+  'clojure-mode
+  '(linum-mode autopair-mode hs-minor-mode ecb-minor-mode yas-minor-mode aggressive-indent-mode auto-complete-mode rainbow-identifiers-mode rainbow-delimiters-mode cider-mode fixmee-mode button-lock-mode)
+  409
+  '(1 nil)
+  nil
+  nil
+  '((indent-tabs-mode) (buffer-file-coding-system . undecided-unix)))
+
+(desktop-create-buffer 206
+  "/home/anthony/WorkSpace/lisp/clojure/clojure-noob/src/clojure_noob/clojure-class.clj"
+  "clojure-class.clj"
+  'clojure-mode
+  '(linum-mode autopair-mode hs-minor-mode ecb-minor-mode yas-minor-mode aggressive-indent-mode auto-complete-mode rainbow-identifiers-mode rainbow-delimiters-mode cider-mode fixmee-mode button-lock-mode)
+  715
+  '(1068 nil)
+  nil
+  nil
+  '((indent-tabs-mode) (buffer-file-coding-system . utf-8-unix)))
+
+(desktop-create-buffer 206
+  "/home/anthony/WorkSpace/lisp/clojure/clojure-noob/src/clojure_noob/html.clj"
+  "html.clj"
+  'clojure-mode
+  '(linum-mode autopair-mode ecb-minor-mode yas-minor-mode aggressive-indent-mode auto-complete-mode rainbow-identifiers-mode cider-mode)
+  1
   '(nil nil)
   nil
   nil
-  '((buffer-file-coding-system . undecided-unix)))
-
-(desktop-create-buffer 206
-  "/home/anthony/.emacs.d/user-init/user-init.el"
-  "user-init.el"
-  'emacs-lisp-mode
-  '(linum-mode autopair-mode yas-minor-mode auto-complete-mode aggressive-indent-mode fixmee-mode button-lock-mode)
-  1
-  '(1510 nil)
-  nil
-  nil
-  '((buffer-file-coding-system . undecided-unix)))
-
-(desktop-create-buffer 206
-  "/home/anthony/.emacs.d/user-init/user-functions-init.el"
-  "user-functions-init.el"
-  'emacs-lisp-mode
-  '(linum-mode autopair-mode yas-minor-mode auto-complete-mode aggressive-indent-mode)
-  3015
-  '(214 nil)
-  nil
-  nil
-  '((buffer-file-coding-system . undecided-unix)))
-
-(desktop-create-buffer 206
-  "/home/anthony/WorkSpace/quick-notes.org"
-  "quick-notes.org"
-  'org-mode
-  '(autopair-mode yas-minor-mode)
-  571
-  '(675 nil)
-  nil
-  nil
-  '((buffer-file-coding-system . undecided-unix) (truncate-lines . t)))
-
-(desktop-create-buffer 206
-  "/home/anthony/WorkSpace/learning.org"
-  "learning.org"
-  'org-mode
-  '(autopair-mode yas-minor-mode)
-  1
-  '(25 nil)
-  nil
-  nil
-  '((buffer-file-coding-system . undecided-unix) (truncate-lines . t)))
+  '((indent-tabs-mode) (buffer-file-coding-system . undecided-unix)))
 

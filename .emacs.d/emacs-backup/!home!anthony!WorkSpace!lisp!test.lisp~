@@ -1,0 +1,71 @@
+(defun testing (input)
+  (print input))
+
+;;(defparameter *foo* 22);; 
+
+
+(defparameter *big* 100)
+(defparameter *small* 1)
+
+(defun guess-my-number ()
+  (ash (+ *big* *small* ) -1 ))
+
+(defun bigger ()
+  (setf *small* 
+	(1+ (guess-my-number))))
+
+(defun smaller()
+  (setf *big*
+	(1- (guess-my-number))))
+
+(defun start-over()
+  (defparameter *big* 100)
+  (defparameter *small* 1)
+  (guess-my-number))
+
+
+(defun more-testing ()
+  (let ((a 2)
+	(b 5))
+    (+ a b))
+  )
+
+
+
+
+
+
+(flet (( f (n)
+	 (+ n 10)))
+  (f 5))
+
+
+(flet
+    ((f (n) ; function declaration
+       (+ n 10)); function body. 
+     (q (n); second function. 
+       (- n 3))); second function body. 
+
+  
+  (f 5) ; 'function' call within local function
+  (q 2)) ; 'second' local function call
+
+
+(labels ((fun (n)
+	   (* 2 10))
+	 (nfun (n)
+	   (print n)))
+
+  (fun 2)
+  (nfun "fuck"))
+
+
+
+
+
+
+
+
+
+
+

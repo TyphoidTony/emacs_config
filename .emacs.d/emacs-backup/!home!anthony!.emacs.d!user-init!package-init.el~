@@ -2,13 +2,12 @@
 					;##### Packages ######; 
 					;#####################;
 
-
 (require 'gruvbox-theme)
 
 
-(require 'powerline)
-;(powerline-vim-theme)
-(powerline-default-theme)
+(require 'spaceline-config)
+(spaceline-emacs-theme)
+
 
 
 (require 'autopair) 
@@ -35,19 +34,16 @@
 
 ;;sr-speedbar code block
 (require 'sr-speedbar)
-					;(sr-speedbar-open)
-
-
-(defalias 'sr 'sr-speedbar-toggle)
-
+(global-set-key [f5] 'sr-speedbar-toggle)
 
 (require 'smex )
 (global-set-key (kbd "M-x") 'smex)
+(global-set-key (kbd "C-;") 'smex)
 
 (require 'fixmee)
 (fixmee-mode t)
 
-
-
+					;
 (add-hook 'term-mode-hook (lambda()
 			    (setq yas-dont-activate t)))
+

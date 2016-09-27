@@ -10,49 +10,53 @@ Font used: http://www.carrois.com/fira-4-1/#download <br>
 
 # My defined commands & Keybinds
 
-Parentheses around commands are just used to denote individual sets of commands
+  Currently now have to many personal aliases to list
+  But to find out what they're called and to use them open the userdefalias.el file. 
+  And also to find out custom functions I have check out the user-functions.el for the documentation and explanation of each function
 
-- kcb : Kills current buffer
 
-- lsp : lists packages
 
-- small-term : opens up a small ANSI-Term below the window. 
 
-- tog: Taken from a stack overflow question about how to lock buffers 
 
-- clear-shell : from emacs wiki is a 'clear' command of sorts for the shell
+# 'Modules' 
 
-- (C-up) (C-down) (C-left) (C-right) : shrinks, enlarges as well as shrinks and enlarges horizontally respectively
+  Right now I have broken my emacs config down into 6 separate files each with their own defined use. I am still fine tuning this as building up your emacs config to make it readable and sustainable to use for the future takes a while. <br> 
 
-- (C-x C-;) : turns iedit mode on when you're over a possible candidate
+I've looked into different ways of modularizing my config and this been the best way I could do it so far. The rucks of it is I have my main .emacs file which acts as main and requires all the files from the user-init directory, which is located in emacs.d and that's it. 
 
-- (C-=) : is for code folding for C-mode and Java-mode
+
+
 
 #List of used packages
 
-- Aggressiv-indent
+- Aggressive-indent
+- ac-cider
 - auto-complete
 - auto-pair
+- cider
+- clojure-mode
+- ecb (as a replacement for sr-speedbar)
 - fixmee
 - gruvbox-theme
 - ido
 - iedit
 - paredit
-- popup
-- projectile
 - powerline
 - rainbow-identifiers
-- rfringe
+- rainbow-delimiters
+- spaceline
 - smex
-- sr-speedbar
 - yasnippet
+<br> 
+
+Any other packages found in my emacs.d are not ones that I downloaded for myself but rather they were dependencies for other packages.
+
 
 #TODO 
 Simple todo list for my config file. 
 
-- Break config into 'modules' to loaded by the main config file. (Have started doing this) 
+- Break config into 'modules' to loaded by the main config file. (DONE but this is a constant effort)
 - On 'fresh install' of emacs have emacs auto-install all the needed packages. 
-Might wait until emacs25 so as to not install old packages from the gnu source instead of the melpa source
-- Get better auto-complete functionality for C-mode
+- Get better auto-complete functionality for C-mode (done to some extent issues are that getting proper auto-complete working with non-clang compilers is annoying and seeing as how the only time I use C is for embedded programming I might have to live with no real IDE level auto-complete)
 - Intergrate org-mode more into my workflow 
 - More to come soon. 

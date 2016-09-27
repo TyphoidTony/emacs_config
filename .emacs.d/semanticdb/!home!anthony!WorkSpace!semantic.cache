@@ -1,0 +1,31 @@
+;; Object WorkSpace/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "WorkSpace/"
+  :tables (list 
+   (semanticdb-table "Main.java"
+    :major-mode 'java-mode
+    :tags 
+        '( ("Main" type
+               (:members 
+                  ( ("main" function
+                       (:typemodifiers ("public" "static")
+                        :arguments 
+                          ( ("args" variable
+                               (:dereference 1
+                                :type "String")
+                                (reparse-symbol formal_parameters) [42 55]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [18 80]))                  
+                :type "class")
+                nil [1 82]))          
+    :file "Main.java"
+    :pointmax 83
+    :fsize 82
+    :lastmodtime '(22361 43276 847590 455000)
+    :unmatched-syntax 'nil
+    )
+   )
+  :file "!home!anthony!WorkSpace!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

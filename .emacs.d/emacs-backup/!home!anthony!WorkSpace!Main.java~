@@ -1,0 +1,27 @@
+interface IExecutor {
+    void execute(String input);
+}
+
+class Executor implements IExecutor {
+    @Override
+
+    public void execute(String input) {
+	System.out.println(input);
+    }
+}
+
+public class Main {
+    public static void main(String[] args) {
+
+	IExecutor executor = createExecutor();
+	executor.execute("TEST");
+    }
+
+    private static IExecutor createExecutor() {
+	IExecutor executor = new Executor();
+	System.out.print("TEST");
+	System.out.print("Anthony");
+
+	return executor;
+    }
+}

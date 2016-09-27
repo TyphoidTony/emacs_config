@@ -1,0 +1,45 @@
+
+(def testing-list ['1283 '22890 "crooow"])
+
+
+(:2 testing-list)
+(+ (inc 199))
+
+(defn chooser
+  [[first-choice second-choice & unimportant-choices]]
+  (println (str "Your first choice is:" first-choice))
+  (println (str "Your second choice is:" second-choice))
+  (println (str "we're ignoring the rest of your choices."
+                "here they are in case you're a dumb-ass as opposed to a dumb ass.: "
+                (clojure.string/join"," unimportant-choices))))
+
+(chooser ["I hate you","hehe","tee","see"])
+
+(defn announce-treasture-locations
+  [{lat :lat lng :lng}]
+  (println (str "Treasture lat:" lat))
+  (println (str "Treasutre lng:" lng)))
+
+( announce-treasture-locations {:lat (read-line) :lng (read-line)})
+
+
+(javax.swing.JOptionPane/showMessageDialog nil "Hello World");; this is cool as shit..
+
+
+(def vector-lists [ 2{:a "penis being loud?" :b "No?"} "finger me slowly"])
+
+(get vector-lists 1 )
+
+
+(defn input-maps  [map-to-input]
+  "this shit works cause fuck you";doc strings all day faggot you just got pranked.
+  {:a [map-to-input] :b [1 2 3 4]})
+
+
+
+
+
+
+
+
+

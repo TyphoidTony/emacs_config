@@ -1,0 +1,81 @@
+					;#####################; 
+					;##### Packages ######; 
+					;#####################;
+
+(require 'gruvbox-theme)
+
+
+(require 'spaceline-config)
+(spaceline-emacs-theme)
+
+(require 'autopair) 
+(autopair-global-mode)
+
+
+(require 'rfringe)
+
+
+(require 'auto-complete)
+(auto-complete-mode)
+(ac-config-default)  
+
+
+(global-set-key (kbd  "C-x C-;") 'iedit-mode)
+
+(require 'yasnippet)
+(yas-global-mode 1)
+
+(global-aggressive-indent-mode 1)
+
+;;for all those nice variable colors
+(add-hook 'prog-mode-hook 'rainbow-identifiers-mode)
+
+;;sr-speedbar code block
+(require 'sr-speedbar)
+					;(global-set-key [f5] 'sr-speedbar-toggle)
+
+(require 'smex )
+(global-set-key (kbd "M-x") 'smex)
+(global-set-key (kbd "C-;") 'smex)
+
+(require 'fixmee)
+(fixmee-mode t)
+
+(global-set-key (kbd "C-c C-d") 'zeal-at-point)
+
+
+
+
+(require 'ecb)
+(ecb-activate)
+(setq ecb-examples-bufferinfo-buffer-name nil)
+(global-set-key [f5] 'ecb-toggle-ecb-windows)
+
+
+;;slime / clisp block
+					;(require 'slime)
+					;(load (expand-file-name "~/quicklisp/slime-helper.el"))
+;; Replace "sbcl" with the path to your implementation
+					;(setq inferior-lisp-program "clojure")
+					;(slime-setup '(slime-fancy))
+
+
+					;(require 'ac-slime)
+					;(add-hook 'slime-mode-hook 'set-up-slime-ac)
+					;(add-hook 'slime-repl-mode-hook 'set-up-slime-ac)
+					;(eval-after-load "auto-complete"
+					;'(add-to-list 'ac-modes 'slime-repl-mode))
+					;(require 'rainbow-delimiters)
+					;(add-hook 'slime-mode-hook 'rainbow-delimiters-mode)
+
+;;clojure block
+(add-hook 'clojure-mode-hook 'rainbow-delimiters-mode)
+
+(require 'ac-cider)
+(add-hook 'cider-mode-hook 'ac-flyspell-workaround)
+(add-hook 'cider-mode-hook 'ac-cider-setup)
+(add-hook 'cider-repl-mode-hook 'ac-cider-setup)
+(eval-after-load "auto-complete"
+  '(progn 
+     (add-to-list 'ac-modes 'cider-mode)
+     (add-to-list 'ac-modes 'cider-repl-mode)))

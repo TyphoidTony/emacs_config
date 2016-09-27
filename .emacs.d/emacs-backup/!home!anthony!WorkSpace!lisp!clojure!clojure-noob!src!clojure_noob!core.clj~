@@ -1,0 +1,35 @@
+(ns clojure-noob.core
+  (:gen-class))
+
+(defn -main
+  "I don't do a whole lot ... yet."
+  [& args]
+  (println "Hello, World!"))
+( + 1 2 3 4 5)
+
+(javax.swing.JOptionPane/showMessageDialog nil "Hello World");; this is cool as shit..
+
+(if  
+    "works"
+  (do (println "didn't work")))
+
+(def ff [  "filthy" "frank" "pap franku"])
+
+(def laster ["filthy" "faggot" "pap-smear"])
+
+(if (= (first ff) "filthy")
+  "faggot")
+
+(defn  my-name  [x]
+  "is it good?!"
+
+  (if ( = x  "filthy")
+    "fuck off"
+    "NO MY NIGGA POOKIE")
+
+
+  )
+
+(my-name "filthy" )
+
+

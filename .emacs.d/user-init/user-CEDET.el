@@ -1,0 +1,10 @@
+					;(semantic-mode 1)
+
+(defun semantic-autocomplete()
+  (add-to-list 'ac-sources 'ac-source-semantic)
+  )
+
+(add-hook 'c-mode-common-hook 'semantic-autocomplete)
+
+
+

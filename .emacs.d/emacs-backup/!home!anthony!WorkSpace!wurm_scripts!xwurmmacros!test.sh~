@@ -1,0 +1,46 @@
+
+test(){
+
+    #    key="$1"
+    #   win="$2"
+    #    imp="$1"
+    #    xdotool search "$1"  windowactivate # this works
+    #    xdotool key --clearmodifiers  $key
+    while true;
+    do
+
+
+	r1="$4";#starting range for shuf
+	r2="$5";#ending range for shuf
+	rand=$(shuf -i $d1-$d2  -n 1);
+	xmacroplay "$DISPLAY" < test.txt
+	#Not really needed but useful to keep incase I find a use for
+	#a variable that holds the current window.
+	#	xdotool  windowactivate --sync $window;
+	echo $rand
+	sleep $rand
+
+    done
+
+    
+    #    xvkbd -text  "hello world"
+    
+}
+
+
+
+
+#echo "what window are you looking for?"
+#read w
+#echo "what key do you want to press?"
+#read k
+
+#win=$(xdotool search --onlyvisible --class Mozilla | head -1)
+
+#xdotool key --clearmodifiers --window $win ctrl+n
+echo "delay 1"
+read d1
+echo "delay 2"
+read d2
+test $d1 $d2
+

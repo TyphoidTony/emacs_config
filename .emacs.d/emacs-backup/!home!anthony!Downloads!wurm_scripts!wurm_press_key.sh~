@@ -1,0 +1,14 @@
+while true; do 
+    rand=$(shuf -i 59-89 -i -n 1);
+    key="ctrl+c";#put key you want pressed three times here.
+    echo $rand;
+    wurm=$(xdotool search --onlyvisible --class wurm | head -1);
+
+    xdotool key --clearmodifiers -window $wurm $key;
+    sleep 0.5;
+    xdotool key --clearmodifiers -window $wurm $key;
+    sleep 1;
+    xdotool key --clearmodifiers -window $wurm $key;
+    sleep 0.7;
+    sleep $rand;
+done

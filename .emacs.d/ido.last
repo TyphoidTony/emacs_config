@@ -2,13 +2,16 @@
 
 ;; ----- ido-last-directory-list -----
 (
+ ("/home/anthony/.config/" . "i3/")
+ ("/home/anthony/Downloads/" . "wurm_scripts/")
+ ("/home/" . "anthony/")
  ("/home/anthony/.emacs.d/config/" . "native/")
  ("/home/anthony/.emacs.d/" . "user-init/")
- ("/home/anthony/" . ".emacs.d/")
+ ("/home/anthony/" . ".config/")
  ("/home/anthony/WorkSpace/AVR Stuff/4_digit_7_segmenet_display_project/src/" . ".git/")
  ("/home/anthony/WorkSpace/AVR Stuff/4_digit_7_segmenet_display_project/" . "src/")
  ("/home/anthony/WorkSpace/AVR Stuff/" . "4_digit_7_segmenet_display_project/")
- ("/home/anthony/WorkSpace/" . "AVR Stuff/")
+ ("/home/anthony/WorkSpace/" . "wurm_scripts/")
  ("/home/anthony/Workspace/AVR Stuff/4_digit_7_segmenet_display_project/src/$home/" . ".eTemp/")
  ("/home/anthony/Workspace/AVR Stuff/4_digit_7_segmenet_display_project/src/" . "$home/")
  ("/home/anthony/Workspace/AVR Stuff/4_digit_7_segmenet_display_project/" . "src/")
@@ -18,8 +21,14 @@
 
 ;; ----- ido-work-directory-list -----
 (
- "/home/anthony/"
+ "/home/anthony/.config/i3/"
+ "/home/anthony/WorkSpace/wurm_scripts/"
  "/home/anthony/.emacs.d/user-init/"
+ "/home/anthony/"
+ "/home/anthony/Downloads/wurm_scripts/"
+ "/home/anthony/Downloads/"
+ "/home/anthony/SpiderOak Hive/"
+ "/home/anthony/WorkSpace/"
  "/home/anthony/.emacs.d/config/"
  "/home/anthony/.emacs.d/"
  "/home/anthony/WorkSpace/AVR Stuff/4_digit_7_segmenet_display_project/src/"
@@ -28,33 +37,47 @@
 
 ;; ----- ido-work-file-list -----
 (
+ "config"
+ "auto.sh"
+ "user-functions.el"
  ".emacs"
- "user-functions-init.el"
- "user-init.el"
- ".emacs_config_push.bash"
- "package-init.el"
- "ido-init.el"
- "key-binds.el"
- "misc-init.el"
- "defined-functions.el"
- "defined-functions"
+ "bills_.sh"
+ "auto_wurm.sh"
+ "wurm_mouse_clicker.sh"
+ "wurm_press_key.sh"
+ "test.sh"
+ "wurm_xdotool.sh"
 )
 
 ;; ----- ido-dir-file-cache -----
 (
- ("/home/anthony/" (22257 16152 801818 207000) "Music/" ".cache/" ".emacs.d/" "Pictures/" ".fonts/" ".mozilla/" "Public/" ".config/" ".adobe/" ".bashrc" ".xsel.log" ".wine/" ".directory" ".gnome2_private/" ".emacs~" "./" ".emacs" ".bash_logout" ".gtkrc-2.0" ".python-eggs/" ".mono/" ".macromedia/" "Downloads/" ".kde/" ".Xauthority" ".face.icon" ".gtkrc-2.0-kde4" ".gitconfig" ".gnupg/" ".local/" ".gnome2/" "Desktop/" ".pip/" ".sudo_as_admin_successful" ".Bookmarks/" ".profile" ".fonts.conf" "VirtualBox VMs/" ".ssh/" ".emacs_config_push.bash" ".pki/" ".dbus/" "Templates/" "Documents/" "SpiderOak Hive/" ".xsession-errors" ".new_install_script.bash" ".bash_history" ".gconf/" ".face" "Videos/" "WorkSpace/" ".recently-used" "../")
+ ("/home/anthony/.config/i3/" (22332 42222 260167 276000) "config.save" ".config.swp" "./" "../" ".#config" "config")
 
- ("/home/anthony/.emacs.d/user-init/" (22257 14833 579293 923000) "user-init.el" ".directory" "./" "package-init.el" "ido-init.el" "user-functions-init.el" "../")
+ ("/home/anthony/.config/" (22332 21735 601833 256000) "upstart/" "orage/" "dconf/" "mimeapps.list" ".mono/" "gtk-3.0/" "autokey/" "TeamSpeak3/" "SpiderOakONE/" "Discord/" "i3/" "Trolltech.conf" "google-chrome/" "autostart/" "./" "VirtualBox/" "Skype/" "vlc/" "user-dirs.dirs" "user-dirs.locale" "menus/" "xfce4/" "../" "transmission/" "catfish/" "cef_user_data/" "pavucontrol.ini" "Thunar/" "evince/" "gtk-2.0/" "MurGuu Softwares/" "ristretto/" "pulse/" "synapse/" "KeePass/" "update-notifier/" "Mousepad/" "libreoffice/" "spotify/" "volumeicon/")
 
- ("/home/anthony/.emacs.d/" (22257 14074 413540 533000) "ido.last" ".directory" "./" ".emacs.desktop.lock" "snippets/" "smex-items" "elpa/" "emacs_auto-save/" "projectile-bookmarks.eld" "emacs-backup/" "session.10706300000145831167000000015360058" "ido.last~" "ac-comphist.dat" "user-init/" ".emacs.desktop" "auto-save-list/" "eshell/" "var/" "../")
+ ("/home/anthony/" (22332 29944 909147 868000) ".gconf/" ".ICEauthority" "Music/" ".steampid" "Pictures/" ".mono/" ".emacs" ".gvfs/" ".gtkrc-2.0" ".prefix32/" ".local/" ".xscreensaver" ".face" ".kde/" ".bashrc~" ".sudo_as_admin_successful" ".ssh/" ".bash_history" ".xsession-errors.old" "SpiderOak Hive/" ".profile" ".wine/" ".bashrc" ".recently-used" ".thunderbird/" ".wurm/" ".python-eggs/" ".Xauthority" ".pki/" ".gksu.lock" "Templates/" ".bash_logout" ".oracle_jre_usage/" ".screenlayout/" ".macromedia/" ".dbus/" "WorkSpace/" ".steam/" ".adobe/" "runts.bash" ".gitconfig" "Steam/" ".pulse-cookie" ".PlayOnLinux/" "Documents/" ".profile~" ".cache/" ".steampath" ".java/" ".xsel.log" ".emacs.d/" ".mozilla/" ".thumbnails/" ".Xdefaults" ".xsession-errors" "Downloads/" ".gnome/" ".gnupg/" ".config/" "Public/" ".Skype/" "Desktop/" ".ts3client/" ".xinputrc" "Videos/" ".dmrc" ".hplip/" "../" "./")
+
+ ("/home/anthony/WorkSpace/wurm_scripts/" (22331 56083 565285 128000) "wurm_mouse_clicker.sh" "README.md" "wurm_press_key.sh" "./" ".git/" "../" "dmesg.txt" "test.sh" "auto.sh")
+
+ ("/home/anthony/WorkSpace/" (22330 45754 561175 681000) "learnBash.sh" "Things I've made/" "wurm_scripts/" "SmartDuck/" "test.java" "memorybook.pdf" "C_Learning_and_ucontrollers/" "quick-notes.org" "AVR-Programming-master/" "ASoto_Resume.pdf" "Projects/" "./" "../" "something.txt" "OtherPeoplesCode/" "nuklear-master.zip" "rfstompbox-0.5/" "Settings/" "learnBash.sh~" "libpololu-avr/" "learning.org" "#quick-notes.org#")
+
+ ("/home/anthony/Downloads/wurm_scripts/" (22322 40355 50246 469000) "wurm_mouse_clicker.sh" "wurm_press_key.sh" "./" "../" "auto_wurm.sh" "test.sh")
+
+ ("/home/anthony/.emacs.d/" (22321 7207 919383 808000) "var/" "ido.last" "auto-save-list/" "user-init/" ".emacs.desktop" ".directory" "elpa/" ".#ido.last" "./" "ido.last~" "../" "projectile-bookmarks.eld" "eshell/" "ede-projects.el" "snippets/" ".emacs.desktop.lock" ".gruv_terminal/" "emacs-backup/" "session.10706300000145831167000000015360058" "ac-comphist.dat" "smex-items")
+
+ ("/home/anthony/SpiderOak Hive/" (22299 43763 231577 719000) "gradday.png" "neutral/" "how to change_cusor_theme_xfce" "Wanderers - a short film by Erik Wernquist [Official Version]-YH3c1QZzRK4.mp4" "FiraMonoFonts3206/" "using_DD_for_bootable_disk" "FlatbedCursors.Black.Regular/" "gruvbox_256palette.sh" "dbus commands(Spotify)" "shpotify-master/" "./" "things to add to bashrc file " "droid-sans.zip" "../" "Breeze-White/" "gruvbox.theme" "MS_FONTS/" "Game_Grumps_Animated_Rocket_Grumps_CHETREO_REMIX_Pixlpit_Animations_hd720(1).mp4" "new_install.bash" "FlatbedCursors.White.Regular/" "Numix + Numix Dark/" "PT 6.1.1 for Windows  Student.exe")
+
+ ("/home/anthony/.emacs.d/user-init/" (22321 15780 781894 468000) "user-init.el" "user-init.el~" ".directory" "user-functions.el" "./" "#package-init.el#" "../" "user-defalias.el" "package-init.el~" "user-packages.el" "user-ido.el")
+
+ ("/home/anthony/Downloads/" (22321 15754 493720 580000) "S16 120 final lab directions(1).docx" "xfwm-theme-breeze-0.1.0/" "wurm_scripts/" "wurm_macros_.sh" "wurm_xdotool.bash" "Game.of.Thrones.S06E03.HDTV.x264-KILLERS[ettv]/" "S16 120 Final Lab(1).pka" "xfwm-theme-breeze-0.1.0(1).tar.gz" "./" "../" "gnome-breeze-master/" "120 final lab directions.docx" "xfwm-theme-breeze-0.1.0.tar.gz" "LinuxAutoMouseClick64Bit/")
+
+ ("/home/" (22298 25538 444874 131000) "./" "../" "anthony/")
 
  ("/home/anthony/.emacs.d/config/" (22256 7417 639184 451000) "defined-functions.el" ".directory" "./" "test.el" "../")
 
  ("/home/anthony/.emacs.d/config/native/" (22256 6435 527632 801000) "./" "../")
 
  ("/home/anthony/.emacs.d/Config-init/" (22256 5321 283069 614000) "./" "test.el" "../")
-
- ("/home/" (22236 41733 180249 505000) ".directory" "./" "anthony/" "../")
 
  ("/home/anthony/WorkSpace/AVR Stuff/4_digit_7_segmenet_display_project/src/.git/" (22231 33246 0 0) "logs/" "./" "ORIG_HEAD" "config" "description" "objects/" "info/" "FETCH_HEAD" "COMMIT_EDITMSG" "refs/" "hooks/" "index" "HEAD" "../")
 
@@ -63,8 +86,6 @@
  ("/home/anthony/WorkSpace/AVR Stuff/4_digit_7_segmenet_display_project/" (22231 32521 0 0) "AVR-Programming-Library/" "./" "src/" "4_digit_7_segment_display_wire_layout.txt" "4_pin_7_segement_display_layout.png" "../")
 
  ("/home/anthony/WorkSpace/AVR Stuff/" (22231 31901 0 0) "atmel_keyboard_interfacing_avr.pdf" "AVR-Programming-Library/" "4_digit_7_segmenet_display_project/" "./" ".Trash-1000/" "TerminalEmu/" "AVR_pin_Picutres/" "../")
-
- ("/home/anthony/WorkSpace/" (22231 31760 0 0) "AVR-Programming-master/" "Java/" "./" "Suto_TicTacToe/" "SutoCard/" "SutoSimon/" "Settings/" "cpp/" "Other/" "fritzing.0.9.2b.32.pc/" "AVR Stuff/" "C_Learning_and_ucontrollers/" "Suto_Calc/" "Arduino/" "Notes_on_Registers_pins_and_IO_reread_until_you_understand.txt" "../")
 
  ("/home/anthony/Desktop/" (22225 41506 161183 438000) "./" "SpiderOak Hive/" "../" ".directory")
 

@@ -1,0 +1,36 @@
+
+#include "main.h" 
+#include "USART.h"
+#incldue <util/delay.h>
+
+
+static inline void blinkLED(void){
+  PORTB = _BV(PB0);
+  _delay_ms(1000);
+  PORTB &= ~_BV(PB0);
+}
+
+
+int main(void) {
+
+
+
+    DDRC |= 0xff;
+    //  DDRB = 0xff;
+    PORTC |= _BV(PC5);
+    blinkLED();
+    initUSART();
+    transmitByte('0');
+  
+
+    while (1) {
+  
+      if(bit_is_clear(PORTC,PC5)){
+	transmitByte('X');
+	blinkLED();
+      }  
+
+
+    }                                                  /* End event loop */
+    return (0);                            /* This line is never reached */
+}

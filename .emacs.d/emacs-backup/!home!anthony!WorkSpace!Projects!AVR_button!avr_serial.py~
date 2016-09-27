@@ -1,0 +1,20 @@
+import os 
+import serial
+import webbrowser
+os.system("")
+
+SERIAL_PORT = "/dev/ttyUSB0"
+BUAD_RATE = 9600
+
+sp = serial.Serial(SERIAL_PORT,BUAD_RATE, timeout = 5)
+sp.flush;
+
+while(1):
+    response = sp.read(1)
+    if response == "0":
+        print "Got byte. Waiting for button press."
+    elif  response == "X":
+        print "recieved byte"
+        webbrowser.open("https://www.reddit.com/")
+    else:
+        print "...Waiting..."

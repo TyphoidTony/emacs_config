@@ -1,0 +1,7 @@
+while true; do 
+    rand=$[(RANDOM % 60) +55]
+    #   wurm=$(xdotool search --onlyvisible --class wurm | head -1)
+    #    xdotool key --clearmodifiers -window $wurm click 1
+    xvkbd -text "\m1";
+    sleep $rand
+done

@@ -1,4 +1,3 @@
-
 (when (>= emacs-major-version 24)
   (require 'package)
   (package-initialize)
@@ -12,7 +11,7 @@
 				      '((vertical-scroll-bars . nil)
 					(horizontal-scroll-bars . nil)))))
 
-;;start linum mode 
+;;start linum mode;;
 (setq linum-mode-inhibit-modes-list '(eshell-mode
 				      shell-mode
 				      erc-mode
@@ -32,7 +31,9 @@
     ad-do-it))
 
 (ad-activate 'linum-on)
-(global-linum-mode);;end linum mode 
+(global-linum-mode);;end linum mode;;
+
+
 
 (setq-default message-log-max nil)
 (kill-buffer "*Messages*")
@@ -53,22 +54,20 @@
 (global-set-key (kbd "<C-right>") 'enlarge-window-horizontally)
 
 
-
-
 (global-hl-line-mode)
 
 
 (fset 'yes-or-no-p 'y-or-n-p)
 
-(set-register ?. '(file ."~/.emacs.d/user-init/user-init.el")); new thing to take advantage of
+(set-register ?i '(file ."~/.emacs.d/user-init/user-init.el")); new thing to take advantage of
 (set-register ?o '(file ."~/WorkSpace/quick-notes.org"))
-(defalias 'cmd 'shell-command); a NEW THING
+
 
 
 (setq visible-bell nil)
 
 
-;(set-face-attribute 'default nil :font "Fira Mono 12")
+(set-face-attribute 'default nil :font "Fira Mono 12")
 
 
 (show-paren-mode t)
@@ -83,3 +82,13 @@
 
 (windmove-default-keybindings)
 
+(global-set-key (kbd "C-x C-k") 'kill-buffer)
+
+
+(add-hook 'term-mode-hook (lambda()
+			    (setq yas-dont-activate t)))
+
+
+;;removes the join quit notifications in erc 
+(setq erc-lurker-hide-list '("JOIN" "PART" "QUIT"))
+(setq erc-lurker-threshold-time 3600)

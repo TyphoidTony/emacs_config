@@ -5,7 +5,7 @@
 
 | Project Ideas         | Eve online things |
 |-----------------------+-------------------|
-| Avr based foot pedal  |                   |
+| Avr based foot pedal  | Market based      |
 | Avr based keyboard    |                   |
 | Polou Orangutan Robot |                   |
 | DD Gui wrapper        |                   |
@@ -17,4 +17,9 @@
 |                       |                   |
 |                       |                   |
 
+|   |   |   |   |   |
+|---+---+---+---+---|
+|   |   |   |   |   |
 
+~/.emacs.d/elpa/sr-speedbar-20150804.951/sr-speedbar.elc:Warning: reference to
+    free variable `helm-alive-p'

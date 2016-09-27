@@ -1,0 +1,9 @@
+while true; do 
+    rand=$[(RANDOM % 60) +55]
+    echo $rand;
+    wurm=$(xdotool search --onlyvisible --class wurm | head -1)
+    xdotool key --clearmodifiers -window $wurm mousemove 1023 1406;##use xdotool getmouselocation to get the loction of the "continue" Button 
+    xdotool key --clearmodifiers -window $wurm click 1
+
+    sleep $rand
+done
